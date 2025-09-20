@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Publications",
-        "excerpt":"*: equally contributing co-first authors Published 2027 Name 1 (2027). Pseudo 2 2026 Name 2 (2026). Pseudo 1 -2025 Lee, Z., and Lee, K. (2025). Causal interaction and effect modification: A randomization-based approach to inference. Journal of the Korean Statistical Society, to appear. Jung, D., Yoon, Y., and Lee, K....","categories": [],
+        "excerpt":"*: equally contributing co-first authors Working Papers Bong, S., and Lee, K. (2025+). Local causal effects with continuous exposures: A matching estimator for the average derivative effect. Submitted. Lee, S., and Lee, K. (2025+). Evaluating time-specific treatment effects in matched-pairs studies. Submitted. Jang, J., Kim, S., and Lee, K. (2025+)....","categories": [],
         "tags": [],
         "url": "/try3.github.io/publications/",
         "teaser": null

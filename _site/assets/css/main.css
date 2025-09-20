@@ -1573,7 +1573,7 @@ table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica 
 
 .site-title { font-family: "Fraunces", "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 700; }
 
-.masthead, .greedy-nav { border-bottom: none !important; box-shadow: none !important; }
+.masthead, .greedy-nav { background: transparent !important; /* let wrapper's bg show through */ border-bottom: none !important; box-shadow: none !important; }
 
 /* Top navigation */
 .research-topnav { display: flex; justify-content: center; gap: 1.5rem; margin: 2rem auto 4rem; flex-wrap: wrap; }
@@ -1648,7 +1648,9 @@ html { scroll-behavior: smooth; }
 /* ------------------------------------------------------------------------------------ */
 /* Homepage */
 /* Publications page */
-.pub-section { border-top: 2px solid rgba(0, 0, 0, 0.2); margin: 2rem 0 1rem; padding-top: 1.25rem; }
+.pub-section { margin: 2rem 0 1rem; padding-top: 1.25rem; font-size: 1.5rem; font-weight: 600; }
+
+h4.pub-year { font-weight: 600 !important; font-family: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif !important; }
 
 .pub-item { margin: 0.75rem 0; line-height: 1.5; }
 
