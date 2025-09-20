@@ -101,26 +101,29 @@ body {
 
 
 /* Spacing */
-.page__title,
-.page__meta {
+.page__title {
   margin-top: 1.5rem; 
 }
 
-.page__header {
-  padding-top: 1.5rem;
-}
+// .page__header {
+//   padding-top: 1.5rem;
+// }
 
-.page__header + .page__content {
-  padding-top: 1.5rem !important;
-}
-
-// h1, h2 {
-//   font-style: italic;
+// .page__header + .page__content {
+//   padding-top: 1.5rem !important;
 // }
 
 html {
   scroll-behavior: smooth;
 }
+
+
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------- Top ------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+
 
 
 /* ------------------------------------------------------------------------------------ */
@@ -186,33 +189,6 @@ html {
 .seminar-page h2:first-of-type {
   margin-top: 1.5rem !important;
 }
-
-
-
-
-
-/* ---------- Ver 2 ---------- */
-
-// .toggle-abstract {
-//   text-align: center;
-//   cursor: pointer;
-//   font-size: 1.2rem;
-//   color: #133DA8;
-//   margin-top: 0.3rem;
-//   user-select: none;
-//   transition: transform 0.2s ease;
-// }
-
-// .abstract-text {
-//   display: -webkit-box;
-//   -webkit-line-clamp: 3;    
-//   -webkit-box-orient: vertical;
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   transition: all 0.3s ease;
-// }
-
-
 
 
 

@@ -1,25 +1,67 @@
-.greedy-nav .visible-links > li::before { content: none !important; }
-
-/* Desktop row only */
-.greedy-nav .visible-links { gap: 0; }
-
-.greedy-nav .visible-links > li + li {
-  border-left: 1px solid #d1d5db;   /* separator color */
-  margin-left: 0.3rem;               /* space before the bar */
-  padding-left: 0.3rem;              /* space after the bar */
+.site-title {
+  font-family: $serif;
+  font-weight: 700;
 }
 
-/* Make sure the dropdown menu has no separators */
-.greedy-nav .hidden-links li {
-  border: 0;
-  margin-left: 0;
-  padding-left: 0;
+.masthead,
+.greedy-nav {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-/* Optional: adjust density on small screens if some items remain visible */
-@media (max-width: 600px) {
-  .greedy-nav .visible-links > li + li {
-    margin-left: 0.63rem;
-    padding-left: 0.6rem;
-  }
-}
+
+
+
+// /* Nav container */
+// .greedy-nav .visible-links {
+//   display: inline-flex;       /* shrink-wrap tabs, no stretch */
+//   border: 1px solid #ccc;
+//   border-radius: 12px;
+//   overflow: hidden;
+//   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+//   background: #fff;
+//   margin: 0 auto;             /* center the nav bar */
+// }
+
+// /* Nav items: don't flex */
+// .greedy-nav .visible-links li {
+//   flex: none;                 /* prevent stretching */
+//   margin: 0;
+//   list-style: none;
+// }
+
+// /* Nav links */
+// .greedy-nav .visible-links a {
+//   display: block;
+//   padding: 0.6rem 1.5rem;     /* consistent spacing */
+//   text-align: center;
+//   text-decoration: none;
+//   background: #fff;
+//   color: #000;
+//   border-right: 1px solid #ccc;
+//   transition: background 0.2s ease, color 0.2s ease;
+// }
+
+// /* Remove right border on last item */
+// .greedy-nav .visible-links li:last-child a {
+//   border-right: none;
+// }
+
+// /* Hover effect */
+// .greedy-nav .visible-links a:hover {
+//   background: #f5f5f5;
+// }
+
+// /* Active tab */
+// .greedy-nav .visible-links .active > a {
+//   background: #0b2fa3; /* blue highlight */
+//   color: #fff;
+//   font-weight: 600;
+// }
+
+// /* Remove bottom border from masthead */
+// .masthead,
+// .greedy-nav {
+//   border-bottom: none !important;
+//   box-shadow: none !important;
+// }

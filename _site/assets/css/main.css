@@ -1571,18 +1571,10 @@ a.home-news-more:hover { color: #333 !important; }
 /* unify table text with normal body text */
 table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica Neue", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", Arial, sans-serif !important; font-size: 1em !important; /* match body size */ font-weight: normal; }
 
-.greedy-nav .visible-links > li::before { content: none !important; }
+.site-title { font-family: "Fraunces", "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 700; }
 
-/* Desktop row only */
-.greedy-nav .visible-links { gap: 0; }
+.masthead, .greedy-nav { border-bottom: none !important; box-shadow: none !important; }
 
-.greedy-nav .visible-links > li + li { border-left: 1px solid #d1d5db; /* separator color */ margin-left: 0.3rem; /* space before the bar */ padding-left: 0.3rem; /* space after the bar */ }
-
-/* Make sure the dropdown menu has no separators */
-.greedy-nav .hidden-links li { border: 0; margin-left: 0; padding-left: 0; }
-
-/* Optional: adjust density on small screens if some items remain visible */
-@media (max-width: 600px) { .greedy-nav .visible-links > li + li { margin-left: 0.63rem; padding-left: 0.6rem; } }
 /* Top navigation */
 .research-topnav { display: flex; justify-content: center; gap: 1.5rem; margin: 2rem auto 4rem; flex-wrap: wrap; }
 
@@ -1644,14 +1636,13 @@ body { background-color: #FAFAFA; }
 .page__footer { background-color: #FAFAFA !important; }
 
 /* Spacing */
-.page__title, .page__meta, .comment__date { margin-top: 1.5rem; }
-
-.page__header { padding-top: 1.5rem; }
-
-.page__header + .page__content { padding-top: 1.5rem !important; }
+.page__title { margin-top: 1.5rem; }
 
 html { scroll-behavior: smooth; }
 
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------- Top ------------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------ Pages ----------------------------------------- */
 /* ------------------------------------------------------------------------------------ */
@@ -1677,5 +1668,3 @@ html { scroll-behavior: smooth; }
 .seminar-page h2 { border-bottom: 1px solid rgba(48, 48, 48, 0.2) !important; margin-top: 4rem !important; }
 
 .seminar-page h2:first-of-type { margin-top: 1.5rem !important; }
-
-/* ---------- Ver 2 ---------- */

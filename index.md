@@ -48,6 +48,7 @@ entries_layout: list
   </div>
 </div>
 
+<br>
 
 <div class="prof-educ">
   <h2>Education</h2>
@@ -90,6 +91,7 @@ entries_layout: list
 </div>
 
 
+<br>
 
 
 <div class="prof-research">
