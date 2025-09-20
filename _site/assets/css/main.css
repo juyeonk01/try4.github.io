@@ -1345,6 +1345,98 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* copyright line: even smaller */
 .page__footer .copyright { font-size: 0.75rem; margin: 0 !important; color: #666666; }
 
+.homepage h2 { border-bottom: none !important; padding-bottom: 0 !important; }
+
+.profile-hero { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+
+.profile-wrap { display: flex; align-items: flex-start; gap: 6rem; }
+
+.profile-left { flex: 1 1 68%; }
+
+.profile-right { flex: 0 0 32%; display: flex; justify-content: center; }
+
+.profile-right img { width: 100%; height: auto; border-radius: 0.25rem; }
+
+.profile-title { font-weight: 400; margin: 1rem 0 0.2rem; }
+
+.profile-links a { text-decoration: underline; text-decoration-thickness: 0.9px; text-underline-offset: 2px; text-decoration-color: inherit; display: inline-block; color: inherit; font-size: 0.9rem; font-weight: 300; margin: 0; line-height: 1.4; }
+
+.profile-email { font-weight: 400; font-size: 0.9rem; margin: 0.5rem 0 1.25rem; }
+
+.profile-p { margin: 0 0 1rem; line-height: 1.6; }
+
+.profile-more { margin-top: -1rem !important; padding: 0; line-height: 1.6; }
+
+.profile-more a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-color: inherit; color: inherit; }
+
+.profile-cta { display: flex; gap: 1.2rem; margin-top: 2rem; }
+
+.icon-link { position: relative; font-size: 1.5rem; color: #2f6f88; text-decoration: none; transition: color 0.2s ease; }
+
+.icon-link:hover { color: #195466; }
+
+.tooltip { position: absolute; bottom: -2rem; left: 50%; transform: translateX(-50%); background: #fff; color: #333; font-size: 0.8rem; font-weight: 500; padding: 0.3rem 0.6rem; border-radius: 4px; white-space: nowrap; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
+
+.icon-link:hover .tooltip { opacity: 1; transform: translateX(-50%) translateY(-3px); }
+
+@media (max-width: 980px) { .profile-wrap { flex-direction: column-reverse; }
+  .profile-right { flex: 0 0 auto; } }
+/* ========== Education Section ========== */
+.prof-educ { margin: 4rem auto 0; max-width: 1150px; }
+
+.prof-educ h2 { margin: 0 0 1.5rem; }
+
+.edu-list { list-style: none; margin: 0; padding: 0; display: grid; row-gap: 0.2rem; /* small but not collapsed */ }
+
+.edu-item { display: grid; grid-template-columns: 8.5rem 1fr; /* narrower year column */ column-gap: 0.4rem; /* slightly smaller column gap */ align-items: start; padding: 0.15rem 0; /* reduced padding */ }
+
+/* left column: years */
+.edu-dates { color: #555; font-weight: 400; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* right column */
+.edu-degree { margin: 0 !important; }
+
+.edu-advisor { margin: 0.1rem 0 0 !important; /* tighter gap above advisor line */ color: #666; font-size: 0.9rem; /* slightly smaller text */ font-weight: 300; }
+
+.edu-advisor a { color: inherit; text-decoration: underline; }
+
+.edu-advisor a:hover { color: #000; }
+
+/* mobile view: stack columns */
+@media (max-width: 640px) { .edu-item { grid-template-columns: 1fr; } }
+/* ========== Research ========== */
+.prof-research { margin: 4rem auto 0; max-width: 1150px; }
+
+.prof-research h2 { margin: 0 0 1.5rem; }
+
+.research-list { list-style: disc inside; margin: 0; padding: 0; line-height: 1.6; }
+
+.research-list li { margin: 0.25rem 0; }
+
+.topics-grid { margin-top: 3rem; max-width: 1100px; display: grid; grid-template-columns: repeat(4, 1fr); /* default: 4×1 on wide screens */ gap: 4rem; /* space between cards */ justify-items: center; /* center each card in its cell */ }
+
+.topic-card { border-radius: 12px; padding: 0.5rem; cursor: pointer; /* makes it look clickable */ }
+
+.topic-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
+
+.topic-card .icon i { font-size: 2rem; margin-bottom: 1rem; color: #2f6f88; }
+
+/* Medium screens → 2×2 */
+@media (max-width: 1024px) { .topics-grid { grid-template-columns: repeat(2, 1fr); } }
+/* Small screens → stack (1×4) */
+@media (max-width: 600px) { .topics-grid { grid-template-columns: 1fr; } }
+.intro-section { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin: 2rem 0; }
+
+.intro-text { text-align: left; }
+
+.intro-text h2 { margin-bottom: 1.2rem; }
+
+.intro-image img { max-width: 100%; /* responsive image */ border-radius: 8px; /* optional: rounded corners */ }
+
+.topics-tags { text-align: center; margin: 2rem 0; }
+
+.tag { display: inline-block; margin: 0.4rem 0.5rem; padding: 0.5rem 1.2rem; border-radius: 25px; background: #f0f4fa; /* default light background */ color: #1a2a4f; /* default navy text */ font-size: 1rem; font-weight: 500; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); transition: all 0.2s ease; }
+
 .news-list { list-style: none; padding-left: 0; margin: 0; }
 
 .news-list h2 { margin-top: 2em; font-weight: bold; border-bottom: none !important; padding-bottom: 0 !important; }
@@ -1439,17 +1531,7 @@ a.home-news-more:hover { color: #333 !important; }
 .person-page p { margin: 0.4rem 0; /* smaller gap between lines */ }
 
 /* Alumni */
-.alumni-wrap { max-width: 900px; margin: 2rem auto; width: 70%; }
-
-/* Let the table fill the wrapper, not the whole page */
-.page__content .alumni-table { width: 100%; border-collapse: collapse; /* MM often sets tables to display:block; override so width behaves predictably */ display: table !important; }
-
-/* Cell spacing */
-.alumni-table th, .alumni-table td { padding: 0.9rem 1.25rem; text-align: left; border-bottom: 1px solid #ddd; }
-
-.alumni-table th { font-weight: 500; text-align: left; }
-
-.alumni-table td:first-child { font-weight: 500; }
+.alumni-list { padding-left: 2rem; padding-right: 2rem; max-width: 800px; margin: 0 auto; text-align: left; }
 
 .layout--person h2 { margin-top: 2rem !important; margin-bottom: 0rem !important; }
 
@@ -1499,6 +1581,24 @@ table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica 
 
 /* Optional: adjust density on small screens if some items remain visible */
 @media (max-width: 600px) { .greedy-nav .visible-links > li + li { margin-left: 0.63rem; padding-left: 0.6rem; } }
+.research-page h1 { margin-bottom: 0rem; }
+.research-page .project { margin-bottom: 2rem; }
+.research-page h3 { margin-top: 0.5rem; margin-bottom: 0.5rem; color: #333; }
+.research-page .keywords { font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0.4rem; margin-right: 0.4rem; font-weight: 600; color: #253F7C; }
+.research-page .authors { font-size: 0.9rem; margin-bottom: 1rem; color: #444; font-style: italic; }
+.research-page hr { border: 0; height: 1px; background: #ddd; margin: 2rem 0; }
+.research-page .toggle-abstract.open { transform: rotate(180deg); /* ▼ becomes ▲ */ }
+.research-page .abstract-text.expanded { -webkit-line-clamp: unset; overflow: visible; }
+.research-page .research-entry { display: flex; background: #FAFAFA; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem; cursor: pointer; }
+.research-page .abstract-text { position: relative; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.research-page .abstract-text::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 2em; }
+.research-page .abstract-text.expanded::after { display: none; }
+.research-page .toggle-abstract { display: flex; align-items: right; justify-content: right; margin-top: 0.5rem; margin-right: 1rem; color: #999; /* light gray */ font-size: 0.9rem; /* a bit smaller so it’s subtle */ font-style: italic; /* optional: softer, less like a headline */ cursor: pointer; user-select: none; transition: color 0.2s ease; }
+.research-page .toggle-abstract:hover { color: #666; /* darken slightly on hover */ }
+.research-page .research-image { flex: 0 0 180px; /* fixed width for image column */ padding: 1.2rem 1rem 1.2rem 0.4rem; display: flex; align-items: flex-start; }
+.research-page .research-image img { width: 100%; height: auto; object-fit: cover; /* crops to fit nicely */ border-radius: 4px; }
+.research-page .research-content { flex: 1; padding: 1.2rem 0rem 0.5rem 1rem; display: flex; flex-direction: column; }
+
 html { font-size: 12px; }
 @media (min-width: 48em) { html { font-size: 14px; } }
 @media (min-width: 64em) { html { font-size: 16px; } }
@@ -1535,10 +1635,6 @@ body { background-color: #FAFAFA; }
 /* ------------------------------------ Pages ----------------------------------------- */
 /* ------------------------------------------------------------------------------------ */
 /* Homepage */
-.homepage h2 { border-bottom: none !important; padding-bottom: 0 !important; }
-
-.causal-image { display: block; margin: 0 auto 3rem auto !important; }
-
 /* Publications page */
 .pub-section { border-top: 2px solid rgba(0, 0, 0, 0.2); margin: 2rem 0 1rem; padding-top: 1.25rem; }
 
@@ -1546,7 +1642,19 @@ body { background-color: #FAFAFA; }
 
 .pub-title { font-weight: 500 !important; }
 
+.pub-icon { width: 0.9rem; height: 0.9rem; margin-left: 0px !important; margin-right: 0px !important; margin-top: 0px !important; margin-bottom: 0.15rem !important; vertical-align: middle !important; }
+
+.pub-link:first-of-type .pub-icon { margin-left: 0rem !important; }
+
+.pub-link { display: inline-block; /* keeps it aligned to text */ line-height: 1; /* avoids extra vertical space */ vertical-align: middle !important; /* align anchor itself */ text-decoration: none !important; /* removes underline */ }
+
+.pub-icon:hover { opacity: 1; }
+
+.pub-link img { display: inline-block; }
+
 /* Seminar page */
 .seminar-page h2 { border-bottom: 1px solid rgba(48, 48, 48, 0.2) !important; margin-top: 4rem !important; }
 
 .seminar-page h2:first-of-type { margin-top: 1.5rem !important; }
+
+/* ---------- Ver 2 ---------- */

@@ -24,19 +24,19 @@ var store = [{
         "teaser": null
       },{
         "title": "People",
-        "excerpt":"Professor Kwonsang Lee Postdoctoral Fellow Hajoung Lee Ph.D. Students Geondo Park Zion Lee Juyeon Kim M.S. Students Suehyun Kim Sangyong Park Alumni Name Degree Current Position Junho Jang M.S. (2025) Bank of Korea Sangjin Lee M.S. (2025) Ph.D. Student, Ghent University Jaehyuk Jang M.S. (2025) Ph.D. Student, Rutgers University Suhwan...","categories": [],
+        "excerpt":"Professor Kwonsang Lee Postdoctoral Fellow Hajoung Lee Ph.D. Students Geondo Park Zion Lee Juyeon Kim M.S. Students Suehyun Kim Sangyong Park Alumni Junho Jang, M.S. (2025), Bank of Korea Sangjin Lee, M.S. (2025), Ph.D. Student at Ghent University Jaehyuk Jang, M.S. (2025), Ph.D. Student at Rutgers University Suhwan Bong, M.S....","categories": [],
         "tags": [],
         "url": "/try3.github.io/people/",
         "teaser": null
       },{
         "title": "Publications",
-        "excerpt":"Submitted / Preprint Bong, S., and Lee, K. (2025+). Local causal effects with continuous exposures: A matching estimator for the average derivative effect. Submitted. Lee, S., and Lee, K. (2025+). Evaluating time-specific treatment effects in matched-pairs studies. Submitted. Jang, J., Kim, S., and Lee, K. (2025+). Improving causal estimation by...","categories": [],
+        "excerpt":"*: equally contributing co-first authors Published 2027 Name 1 (2027). Pseudo 2 2026 Name 2 (2026). Pseudo 1 -2025 Lee, Z., and Lee, K. (2025). Causal interaction and effect modification: A randomization-based approach to inference. Journal of the Korean Statistical Society, to appear. Jung, D., Yoon, Y., and Lee, K....","categories": [],
         "tags": [],
         "url": "/try3.github.io/publications/",
         "teaser": null
       },{
-        "title": "Projects",
-        "excerpt":" ","categories": [],
+        "title": "Research",
+        "excerpt":"Mixing Samples to Address Weak Overlap in Causal Inference Overlap, Mixing Jaehyuk Jang, Suehyun Kim In observational studies, the assumption of sufficient overlap (positivity) is fundamental for the identification and estimation of causal effects. Failing to account for this assumption yields inaccurate and potentially infeasible estimators. To address this issue,...","categories": [],
         "tags": [],
         "url": "/try3.github.io/research/",
         "teaser": null
@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Kwonsang Lee",
-        "excerpt":" ","categories": [],
+        "excerpt":"Academic Appointments Associate Professor, Department of Statistics, Seoul National University, 2025 – Present Assistant Professor, Department of Statistics, Seoul National University, 2021 – 2025 Assistant Professor, Department of Statistics, Sungkyunkwan University, 2020 – 2021 Research Associate, Department of Biostatistics, Harvard T.H. Chan School of Public Health, 2019 – 2020 Mentor:...","categories": [],
         "tags": [],
         "url": "/try3.github.io/people/kwonsang-lee/",
         "teaser": null
