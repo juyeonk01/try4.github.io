@@ -150,108 +150,28 @@ entries_layout: list
 <br>
 
 
-<div class="prof-research">
-  <h2>Research Interests</h2>
-  <ul class="research-list">
-    <li>Matching and Design (high-dimensional matching, matching with quantum computing, many-to-many)</li>
-    <li>Inference (heterogeneous effect, causal interaction, sensitivity analysis)</li>
-    <li>Overlap &amp; Robustness (diagnostics, quantifying overlap)</li>
-    <li>Complex Structure (multiple treatments, time-series data, mediation)</li>
-  </ul>
-</div>
-
-
-
-
-<div class="intro-section">
-  <div class="intro-text">
-  <h2>About Us</h2>
-    <p>
-      Causal inference is the study of how to make valid conclusions about cause and effect from data, whether it comes from randomized experiments or observational studies. It provides statistical tools for going beyond simple associations to uncover true causal relationships.
-    </p>
-    <p>
-      We focus on developing statistical methods for causal inference, while also engaging with applications in fields such as epidemiology, public health, and medicine, where these methods can be meaningfully applied.
-    </p>
-    <p>
-      Our research covers the following topics:
-    </p>
-  </div>
-
-  <div class="intro-image">
-    <img src="{{ '/assets/images/causal.png' | relative_url }}" alt="Causal inference illustration">
-  </div>
-</div>
-
-
-<div class="topics-grid">
-  <a href="#matching" class="topic-card">
-    <div class="icon"><i class="fas fa-link"></i></div>
-    <h4>Matching and Weighting</h4>
-    <p>Techniques that aim to balance covariates between treated and control groups in observational studies, either by pairing similar units (matching) or reweighting samples to create pseudo-populations that approximate randomized experiments.</p>
-  </a>
-
-  
-  <div class="topic-card">
-    <div class="icon"><i class="fas fa-dice"></i></div>
-    <h4>Randomization Designs and Analysis</h4>
-    <p>Approaches that leverage random assignment in experimental studies—such as complete, block, or cluster randomization—and the corresponding analytical frameworks that ensure unbiased estimation of treatment effects.</p>
-  </div>
-  
-  <div class="topic-card">
-    <div class="icon"><i class="fas fa-shield-alt"></i></div>
-    <h4>Sensitivity Analysis</h4>
-    <p>Methods to assess how robust causal conclusions are to violations of assumptions, such as unmeasured confounding or model misspecification.tion.</p>
-  </div>
-  <div class="topic-card">
-    <div class="icon"><i class="fas fa-users"></i></div>
-    <h4>Heterogeneous Treatment Effects</h4>
-    <p>Frameworks for studying how treatment effects vary across subgroups or individuals, often using machine learning or interaction models to uncover effect modifiers.</p>
-  </div>
-  
-  <div class="topic-card">
-    <div class="icon"><i class="fas fa-random"></i></div>
-    <h4>Instrumental Variables</h4>
-    <p>Estimation techniques that exploit external sources of variation (instruments) to address unmeasured confounding.</p>
-  </div>
-</div>
-
-
-
-
-<br>
-
-
-
-
 
 ## To Do
 
 * Home
-  * Background colors for home page
-  * Image color
-  * ~~Brief introduction of our lab~~
-  * ~~Simple research info~~
-  * Navigation bar - combine pages?
-  * Mobile navigation bar changed
+  * Background colors?
 * Research
-  * Edit keywords
-  * Image?
-  * Names?
-  * Try different layouts: no card, small image to the left, no toggle
+  * More colors?
 * Publications
-  * ~~Add professor~~
-  * ~~Add arXiv link / paper link~~
-  * ~~Logo 미세조정~~
   * Add DOI
 * People
-  * Professor: what info? pic? hline?
-  * ~~Better alumni table~~
+  * Individual pages
+  * Better layout
+    * Name card
+    * Background color
 * Seminar
   * 2024 2 reviews
-  * Symposium
+  * Symposium -> to news
+  * Under research?
+* News
+  * Add more news
 * Misc.
   * Remove space at the bottom
   * Copyright messgae
-  * Contact info at the footer?
-  * ~~Check hyperlinks of page titles~~
+  * Contact info at the footer? (causal email)
 
