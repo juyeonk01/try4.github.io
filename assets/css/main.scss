@@ -185,10 +185,21 @@ h4.pub-year {
   display: inline-block;
 }
 
+
 /* Seminar page */
 .seminar-page h2 {
-  border-bottom: 1px solid rgba(48,48,48,0.2) !important;
-  margin-top: 4rem !important; 
+  margin-top: 4rem !important;
+  font-family: $serif-sub; 
+  font-weight: 600 !important;
+
+  border-bottom: 1.5px solid #eaeaea;
+}
+
+.seminar-page h3 {
+  font-family: $serif-sub;
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-top: 2rem;
 }
 
 .seminar-page h2:first-of-type {
