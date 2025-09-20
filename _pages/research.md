@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Research"
+title: "Our Projects by Topics"
 ---
 
 <!-- Top navigation -->

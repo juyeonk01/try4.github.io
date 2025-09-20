@@ -24,7 +24,7 @@ entries_layout: list
         My research develops design- and algorithm-centric methods for causal inference, with a focus on matching, weighting, diagnostics, and randomization-based inference.
       </p>
       <p class="profile-more">
-        <a href="/research/">More about my research →</a>
+        <a href="{{ '/research/' | relative_url }}">More about my research →</a>
       </p>
       <p class="profile-p">
         From July 2025, I will be a visiting scholar at the University of Pennsylvania.
@@ -119,6 +119,33 @@ entries_layout: list
 </div>
 
 
+<br>
+
+
+<div class="home-news">
+  <div class="home-news-left">
+    <h2>News</h2>
+    <a class="home-news-more" href="{{ '/news/' | relative_url }}">View all →</a>
+  </div>
+
+  <div class="home-news-right">
+    <ul class="news-list">
+      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
+      {% for item in recent_news %}
+        <li class="news-row">
+          <span class="news-date">{{ item.date | date: "%b %d" }}</span>
+          <span class="news-entry">{{ item.content | markdownify | strip }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+
+<br>
+
+<br>
 
 
 <div class="prof-research">
@@ -132,18 +159,6 @@ entries_layout: list
 </div>
 
 
-
-
-
-
-
-
-## Research Interests
-
-- Matching and Design (high-dimensional matching, matching with quantum computing, many-to-many)
-- Inference (heterogeneous effect, causal interaction, sensitivity analysis)
-- Overlap & Robustness (diagnostics, quantifying overlap)
-- Complex Structure (multiple treatments, time-series data, mediation)
 
 
 <div class="intro-section">
@@ -167,11 +182,6 @@ entries_layout: list
 
 
 <div class="topics-grid">
-  <!-- <div class="topic-card">
-    <div class="icon"><i class="fas fa-link"></i></div>
-    <h4>Matching and Weighting</h4>
-    <p>Techniques that aim to balance covariates between treated and control groups in observational studies, either by pairing similar units (matching) or reweighting samples to create pseudo-populations that approximate randomized experiments.</p>
-  </div> -->
   <a href="#matching" class="topic-card">
     <div class="icon"><i class="fas fa-link"></i></div>
     <h4>Matching and Weighting</h4>
@@ -207,25 +217,6 @@ entries_layout: list
 
 
 <br>
-
-<div class="home-news">
-  <div class="home-news-left">
-    <h2>News</h2>
-    <a class="home-news-more" href="{{ '/news/' | relative_url }}">View all →</a>
-  </div>
-
-  <div class="home-news-right">
-    <ul class="news-list">
-      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
-      {% for item in recent_news %}
-        <li class="news-row">
-          <span class="news-date">{{ item.date | date: "%b %d" }}</span>
-          <span class="news-entry">{{ item.content | markdownify | strip }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
 
 
 
