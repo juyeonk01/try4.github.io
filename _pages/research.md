@@ -50,6 +50,7 @@ title: "Research"
           longitudinal observational studies.
         </p>
         <div class="tags">
+          <span class="tag-label">Related:</span>
           <a href="#inference" class="tag">Inference</a>
           <a href="#complex" class="tag">Complex Structures</a>
         </div>

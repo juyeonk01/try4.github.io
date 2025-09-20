@@ -1589,12 +1589,12 @@ table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica 
 .research-topnav a:hover { background: #2f6f8866; color: #fff; }
 
 /* Section layout */
-.research-section { display: grid; grid-template-columns: 250px 1fr; gap: 1rem; margin-bottom: 3rem; align-items: start !important; /* fix vertical misalignment */ }
+.research-section { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; margin-bottom: 3rem; align-items: start !important; /* fix vertical misalignment */ scroll-margin-top: 50px; }
 
 .topic-title { font-weight: 900; border-bottom: none !important; margin: 0; padding-top: 0.3rem; /* match project title */ }
 
 /* Projects */
-.topic-projects article { margin-bottom: 2rem; }
+.topic-projects article { margin-bottom: 2rem; padding: 1.2rem 1.4rem !important; border: 1px solid #e0e0e0; /* light border */ border-radius: 8px; /* rounded corners */ background-color: #f7f7f7; /* keep clean white */ }
 
 .topic-projects h3 { padding-top: 0.3rem; margin: 0 0 0.3rem; font-weight: 900; font-size: 1.2rem; }
 
@@ -1605,13 +1605,13 @@ table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica 
 /* Tags */
 .tags { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 0.3rem; }
 
-.tag { display: inline-block; font-size: 0.85rem; padding: 0.15rem 0.6rem; border-radius: 12px; background-color: #f5f5f5; border: 1px solid #e0e0e0; color: #333; text-decoration: none; transition: background 0.2s ease; box-shadow: none; }
+.tag { display: inline-block; font-size: 0.85rem; padding: 0.15rem 0.6rem; border-radius: 12px; background-color: #fafafa; border: 1px solid #e0e0e0; color: #333; text-decoration: none; transition: background 0.2s ease; box-shadow: none; }
 
-.tag:hover { background-color: #f5f5f5; box-shadow: none; }
+.tag:hover { background-color: #fafafa; box-shadow: none; }
 
-.tag:visited { color: #333; background-color: #f5f5f5; }
+.tag:visited { color: #333; background-color: #fafafa; }
 
-.tag-label { font-size: 0.85rem; color: #555; font-style: italic; }
+.tag-label { font-size: 0.85rem; margin-right: 0.4rem; color: #555; font-style: italic; }
 
 /* Responsive: stack on smaller screens */
 @media (max-width: 768px) { .research-section { grid-template-columns: 1fr; }
@@ -1647,6 +1647,8 @@ body { background-color: #FAFAFA; }
 .page__header { padding-top: 1.5rem; }
 
 .page__header + .page__content { padding-top: 1.5rem !important; }
+
+html { scroll-behavior: smooth; }
 
 /* ------------------------------------------------------------------------------------ */
 /* ------------------------------------ Pages ----------------------------------------- */
