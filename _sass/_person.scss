@@ -1,61 +1,57 @@
-/* Section titles centered */
-.people-title {
-  text-align: center;
-  margin: 3rem 0 1rem;
-  border-bottom: none !important;
-}
-
-/* Default: 3 columns */
 .people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 260px));
-  justify-content: center;
-  gap: 1.5rem 2rem;
-  margin: 1rem auto 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 3rem;
+  margin: 2rem 1rem;
 }
 
-/* 1 person: force middle column */
-@media (min-width: 901px) {
-  .people-grid > .person-card:only-child {
-    grid-column: 2;
-  }
-  /* 2 people: use a 2-col grid instead of forcing 1 and 3 */
-  .people-grid.two-people {
-    grid-template-columns: repeat(2, minmax(0, 260px));
-    justify-content: center; /* centers the 2 cards in the full width */
-  }
-}
-
-
-/* Card */
-.person-card { text-align: center; }
-
-/* Square image */
-.person-photo {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+.person-card {
+  background: #fff;
+  border: 1px solid #eee;
+  // border-radius: 6px;
   overflow: hidden;
-  background: #eee;
-  border-radius: 0;          /* square corners */
-}
-.person-photo img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
 
-/* Text */
-.person-name { margin-top: .6rem; font-weight: 600; }
-.person-name a { text-decoration: none; }
-.person-meta { margin-top: .2rem; color: #666; font-size: .95rem; }
+.person-card:hover {
+  transform: translateY(-4px);
+}
+
+.person-photo {
+  width: 100%;
+  aspect-ratio: 15 / 16;  
+  object-fit: cover;   
+}
+
+.person-info {
+  padding: 1rem 1rem 1rem 1rem;
+  // padding: 2rem auto;
+}
 
 .person-name a {
-  color: #000 !important;
-  text-decoration: none !important;
+  font-family: $serif-sub;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: #000;   /* or inherit if you want theme color */
 }
 
-.person-name a:hover {
-  color: #333 !important;  /* subtle hover effect */
+.person-role {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.2rem;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* Person page header */
@@ -123,42 +119,6 @@
 .person-page p {
   margin: 0.4rem 0;   /* smaller gap between lines */
 }
-
-/* Alumni */
-// .alumni-wrap {
-//   max-width: 900px;         
-//   margin: 2rem auto;     
-//   width: 70%;
-// }
-
-// /* Let the table fill the wrapper, not the whole page */
-// .page__content .alumni-table {
-//   width: 100%;
-//   border-collapse: collapse;
-//   /* MM often sets tables to display:block; override so width behaves predictably */
-//   display: table !important;
-// }
-
-// /* Cell spacing */
-// .alumni-table th,
-// .alumni-table td {
-//   padding: 0.9rem 1.25rem;
-//   text-align: left;
-//   border-bottom: 1px solid #ddd;
-// }
-
-// .alumni-table th { font-weight: 500; text-align: left; }
-// .alumni-table td:first-child { font-weight: 500; }
-
-.alumni-list {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  max-width: 800px;    
-  margin: 0 auto;   
-  text-align: left;  
-}
-
-
 
 
 .layout--person h2 {
@@ -258,14 +218,15 @@
   margin-top: 0;
 }
 
+// .alumni-list {
+//   padding-left: 2rem;
+//   padding-right: 2rem;
+//   max-width: 800px;    
+//   margin: 0 auto;   
+//   text-align: left;  
+// }
 
-
-
-/* unify table text with normal body text */
-table,
-table th,
-table td {
-  font-family: $global-font-family !important;
-  font-size: 1em !important;   /* match body size */
-  font-weight: normal;
+.alumni {
+  margin-top: 5em;
 }
+

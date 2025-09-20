@@ -2,7 +2,7 @@
 layout: person
 name: Suehyun Kim
 role: ms               # pi | phd | ms
-order: 1
+order: 6
 photo: /assets/images/people/suehyun-kim.jpg
 office: 25-403
 email: suehyunkim@snu.ac.kr

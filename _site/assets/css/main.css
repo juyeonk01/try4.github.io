@@ -1475,34 +1475,19 @@ a.home-news-more:hover { color: #333 !important; }
 /* Mobile: stack */
 @media (max-width: 768px) { .home-news { grid-template-columns: 1fr; }
   .home-news-left { margin-bottom: 0.5rem; } }
-/* Section titles centered */
-.people-title { text-align: center; margin: 3rem 0 1rem; border-bottom: none !important; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 3rem; margin: 2rem 1rem; }
 
-/* Default: 3 columns */
-.people-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 260px)); justify-content: center; gap: 1.5rem 2rem; margin: 1rem auto 2rem; }
+.person-card { background: #fff; border: 1px solid #eee; overflow: hidden; text-align: left; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); transition: transform 0.2s ease; }
 
-/* 1 person: force middle column */
-@media (min-width: 901px) { .people-grid > .person-card:only-child { grid-column: 2; }
-  /* 2 people: use a 2-col grid instead of forcing 1 and 3 */
-  .people-grid.two-people { grid-template-columns: repeat(2, minmax(0, 260px)); justify-content: center; /* centers the 2 cards in the full width */ } }
-/* Card */
-.person-card { text-align: center; }
+.person-card:hover { transform: translateY(-4px); }
 
-/* Square image */
-.person-photo { display: block; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #eee; border-radius: 0; /* square corners */ }
+.person-photo { width: 100%; aspect-ratio: 15 / 16; object-fit: cover; }
 
-.person-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.person-info { padding: 1rem 1rem 1rem 1rem; }
 
-/* Text */
-.person-name { margin-top: .6rem; font-weight: 600; }
+.person-name a { font-family: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 600; font-size: 1.05rem; text-decoration: none; color: #000; /* or inherit if you want theme color */ }
 
-.person-name a { text-decoration: none; }
-
-.person-meta { margin-top: .2rem; color: #666; font-size: .95rem; }
-
-.person-name a { color: #000 !important; text-decoration: none !important; }
-
-.person-name a:hover { color: #333 !important; /* subtle hover effect */ }
+.person-role { font-size: 0.9rem; color: #555; margin-top: 0.2rem; }
 
 /* Person page header */
 .person-header { display: grid; grid-template-columns: 220px 1fr; gap: 1.75rem; align-items: center; margin-bottom: 0.2rem; }
@@ -1531,9 +1516,6 @@ a.home-news-more:hover { color: #333 !important; }
 .people-title:not(:first-of-type) { margin-top: 5rem; /* bigger gap for subsequent sections */ }
 
 .person-page p { margin: 0.4rem 0; /* smaller gap between lines */ }
-
-/* Alumni */
-.alumni-list { padding-left: 2rem; padding-right: 2rem; max-width: 800px; margin: 0 auto; text-align: left; }
 
 .layout--person h2 { margin-top: 2rem !important; margin-bottom: 0rem !important; }
 
@@ -1568,8 +1550,7 @@ a.home-news-more:hover { color: #333 !important; }
 
 .person-page .person-header { margin-top: 0; }
 
-/* unify table text with normal body text */
-table, table th, table td { font-family: "Work Sans", "Public Sans", "Helvetica Neue", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", Arial, sans-serif !important; font-size: 1em !important; /* match body size */ font-weight: normal; }
+.alumni { margin-top: 5em; }
 
 .site-title { font-family: "Fraunces", "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 700; }
 
@@ -1671,4 +1652,4 @@ h4.pub-year { font-weight: 600 !important; font-family: "Libre Baskerville", "Me
 
 .seminar-page h3 { font-family: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-size: 1.1rem; font-weight: 900; margin-top: 2rem; }
 
-.seminar-page h2:first-of-type { margin-top: 1.5rem !important; }
+.seminar-page h2:first-of-type { margin-top: 2rem !important; }

@@ -23,8 +23,8 @@ var store = [{
         "url": "/try3.github.io/news/",
         "teaser": null
       },{
-        "title": "People",
-        "excerpt":"Professor Kwonsang Lee Postdoctoral Fellow Hajoung Lee Ph.D. Students Geondo Park Zion Lee Juyeon Kim M.S. Students Suehyun Kim Sangyong Park Alumni Junho Jang, M.S. (2025), Bank of Korea Sangjin Lee, M.S. (2025), Ph.D. Student at Ghent University Jaehyuk Jang, M.S. (2025), Ph.D. Student at Rutgers University Suhwan Bong, M.S....","categories": [],
+        "title": "Lab Members",
+        "excerpt":"Kwonsang Lee Faculty Hajoung Lee Postdoctoral Fellow Geondo Park Ph.D. Student Zion Lee Ph.D. Student Juyeon Kim Ph.D. Student Suehyun Kim Master's Student Sangyong Park Master's Student Alumni Junho Jang, Master's (2025). Economist, the Bank of Korea. Jaehyuk Jang, Master's (2025). Ph.D. student, Rutgers University (since 2025). Sangjin Lee, Master's...","categories": [],
         "tags": [],
         "url": "/try3.github.io/people/",
         "teaser": null
