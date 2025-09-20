@@ -174,4 +174,7 @@ entries_layout: list
   * Remove space at the bottom
   * Copyright messgae
   * Contact info at the footer? (causal email)
+  * Remove unnecessary code and images and files
+    * scss
+    * head
 
