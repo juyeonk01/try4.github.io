@@ -20,7 +20,8 @@ title: "Research"
     <div class="topic-projects">
 
       <article>
-        <h3>High-Dimensional Matching (with Hajeong Lee)</h3>
+        <h3>High-Dimensional Matching</h3>
+        <p class="project-people">with Hajeong Lee</p>
         <p>
           This project develops a new many-to-many matching algorithm for high-dimensional settings
           that does not rely on outcome information. The goal is to construct matched sets that achieve
@@ -29,6 +30,7 @@ title: "Research"
           dimensions and establishing inference procedures that remain valid in such complex settings.
         </p>
         <div class="tags">
+          <span class="tag-label">Related:</span>
           <a href="#overlap" class="tag">Overlap & Robustness</a>
           <a href="#inference" class="tag">Inference</a>
           <a href="#complex" class="tag">Complex Structures</a>
@@ -36,7 +38,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Time Series Matching (with Suehyun Kim)</h3>
+        <h3>Time Series Matching</h3>
+        <p class="project-people">with Suehyun Kim</p>
         <p>
           This project introduces Reverse-Time Nested Matching (RTNM), a new design for staggered adoption
           and time-series settings. Instead of matching independently at each event time, RTNM builds matched
@@ -53,7 +56,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Matching with Quantum Computing (with Sangyong Park)</h3>
+        <h3>Matching with Quantum Computing</h3>
+        <p class="project-people">with Sangyong Park</p>
         <p>
           This project explores the potential of quantum optimization algorithms to address computational
           challenges in complex matching problems. We target practically difficult designs such as
@@ -73,7 +77,8 @@ title: "Research"
     <div class="topic-projects">
 
       <article>
-        <h3>Weak Overlap and Mixing Samples (with Jaehyuk Jang and Suehyun Kim)</h3>
+        <h3>Weak Overlap and Mixing Samples</h3>
+        <p class="project-people">with Jaehyuk Jang and Suehyun Kim</p>
         <p>
           This project develops a framework for addressing weak overlap in observational studies by introducing
           a mixing-sample design. Instead of discarding units or relying on restrictive constraints, the method
@@ -85,7 +90,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Quantifying Overlap (with Geondo Park and Juyeon Kim)</h3>
+        <h3>Quantifying Overlap</h3>
+        <p class="project-people">with Geondo Park and Juyeon Kim</p>
         <p>
           This project develops a diagnostic framework for quantifying the degree of overlap between treated and
           control groups in observational studies. Building on ideas from mixture modeling, we approximate the
@@ -105,7 +111,8 @@ title: "Research"
     <div class="topic-projects">
 
       <article>
-        <h3>Time-Varying Treatment Effect (with Sangjin Lee)</h3>
+        <h3>Time-Varying Treatment Effect</h3>
+        <p class="project-people">with Sangjin Lee</p>
         <p>
           This project develops a randomization-based framework for evaluating treatment effects that evolve over
           time in matched observational studies. Existing survival tests often detect whether an effect exists
@@ -119,7 +126,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Heterogeneous ATT in DID (with Junho Jang)</h3>
+        <h3>Heterogeneous ATT in DID</h3>
+        <p class="project-people">with Junho Jang</p>
         <p>
           This project investigates heterogeneity in the average treatment effect on the treated (ATT) within the
           difference-in-differences (DID) framework. While standard DID estimators assume a constant ATT over time,
@@ -131,7 +139,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Randomization-based Testing for Causal Interaction (with Zion Lee)</h3>
+        <h3>Randomization-based Testing for Causal Interaction</h3>
+        <p class="project-people">with Zion Lee</p>
         <p>
           This project focuses on developing randomization-based methods to detect causal interaction in multi-arm
           treatment settings. Using the attributable effect framework, we design tests that reflect the assignment
@@ -151,7 +160,8 @@ title: "Research"
     <div class="topic-projects">
 
       <article>
-        <h3>Causal Derivative Effects (with Suhwan Bong)</h3>
+        <h3>Causal Derivative Effects</h3>
+        <p class="project-people">with Suhwan Bong</p>
         <p>
           This project develops a framework to study causal derivative effects, which measure how small changes in
           a continuous treatment influence outcomes. Instead of dichotomizing exposures (e.g., low vs. high), we
@@ -172,7 +182,8 @@ title: "Research"
     <div class="topic-projects">
 
       <article>
-        <h3>COPD Progression (with Geondo Park, Samsung Medical Center)</h3>
+        <h3>COPD Progression</h3>
+        <p class="project-people">with Geondo Park, Samsung Medical Center</p>
         <p>
           This project investigates the sequential relationship between functional small airway disease (fSAD) and
           emphysema in patients with early-stage COPD, using longitudinal CT imaging data. We applied parametric
@@ -186,7 +197,8 @@ title: "Research"
       </article>
 
       <article>
-        <h3>Antiseizure Medication Adherence in Epilepsy (with Geondo Park, SNU Hospital)</h3>
+        <h3>Antiseizure Medication Adherence in Epilepsy</h3>
+        <p class="project-people">with Geondo Park, SNU Hospital</p>
         <p>
           Using nationwide health insurance data from Korea, we analyze adherence to antiseizure medications among
           more than 190,000 epilepsy patients. We find overall adherence around 70%, with chronic patients showing
