@@ -1,0 +1,260 @@
+/* Section titles centered */
+.people-title {
+  text-align: center;
+  margin: 3rem 0 1rem;
+  border-bottom: none !important;
+}
+
+/* Default: 3 columns */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 260px));
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  margin: 1rem auto 2rem;
+}
+
+/* 1 person: force middle column */
+@media (min-width: 901px) {
+  .people-grid > .person-card:only-child {
+    grid-column: 2;
+  }
+  /* 2 people: use a 2-col grid instead of forcing 1 and 3 */
+  .people-grid.two-people {
+    grid-template-columns: repeat(2, minmax(0, 260px));
+    justify-content: center; /* centers the 2 cards in the full width */
+  }
+}
+
+
+/* Card */
+.person-card { text-align: center; }
+
+/* Square image */
+.person-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 0;          /* square corners */
+}
+.person-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+
+/* Text */
+.person-name { margin-top: .6rem; font-weight: 600; }
+.person-name a { text-decoration: none; }
+.person-meta { margin-top: .2rem; color: #666; font-size: .95rem; }
+
+.person-name a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.person-name a:hover {
+  color: #333 !important;  /* subtle hover effect */
+}
+
+
+/* Person page header */
+.person-header {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.75rem;        
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.person-header-photo {
+  width: 220px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee;
+  margin-right: 1rem; 
+}
+
+.person-header-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Responsive */
+@media (max-width: 900px) { .people-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } }
+@media (max-width: 560px) { .people-grid { grid-template-columns: 1fr; } .person-header { grid-template-columns: 1fr; } }
+
+
+
+.person-info p {
+  margin: 0.2rem 0;   
+  line-height: 1.4; 
+}
+
+.edu-sub {
+  margin-left: 1.5rem;
+  display: block;
+}
+
+/* Add breathing room between the big page title and the person header */
+.page__content > .person-page:first-child {
+  margin-top: 1rem !important;  /* tweak 1.5–3rem to taste */
+}
+
+.person-page h2,
+.person-page h3 {
+  border-bottom: none !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.person-page strong {
+  font-weight: 500 !important;
+}
+
+.person-degree {
+  font-size: 1.2rem !important;     /* slightly larger than normal text */
+  font-weight: 500;      /* medium weight */
+  margin: 0 0 1rem 0 !important;  /* small space below degree line */
+}
+
+.people-title:not(:first-of-type) {
+  margin-top: 5rem;  /* bigger gap for subsequent sections */
+}
+
+.person-page p {
+  margin: 0.4rem 0;   /* smaller gap between lines */
+}
+
+/* Alumni */
+.alumni-wrap {
+  max-width: 900px;         
+  margin: 2rem auto;     
+  width: 70%;
+}
+
+/* Let the table fill the wrapper, not the whole page */
+.page__content .alumni-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* MM often sets tables to display:block; override so width behaves predictably */
+  display: table !important;
+}
+
+/* Cell spacing */
+.alumni-table th,
+.alumni-table td {
+  padding: 0.9rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.alumni-table th { font-weight: 500; text-align: left; }
+.alumni-table td:first-child { font-weight: 500; }
+
+.layout--person h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.layout--person h2 + ul,
+.layout--person h3 + ul {
+  margin-top: 0.5rem !important;
+}
+
+
+.layout--person .page__meta {
+  display: none !important;
+}
+
+
+
+
+/* Person page: icon + text rows (Office / Email / Website) */
+.person-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;            /* vertical space between rows */
+  margin-top: 0.5rem;
+}
+
+.person-contacts .contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;             /* horizontal space between icon and text */
+}
+
+.person-contacts .icon {
+  width: 1.15rem;          /* fixed icon column */
+  height: 1.15rem;
+  flex: 0 0 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;     /* inherit text color */
+}
+
+.person-contacts .icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  stroke: currentColor;
+  color: #253F7C;
+}
+
+.person-contacts .text {
+  flex: 1 1 auto;          /* text takes remaining width */
+  min-width: 0;            /* prevents weird shrinking */
+  line-height: 1.5;        /* comfortable line height */
+}
+
+/* Links: black, tidy wrapping for long URLs */
+.person-contacts .email-link,
+.person-contacts .website-link {
+  color: #333 !important;
+  text-decoration: none;
+}
+
+.person-contacts .email-link:hover,
+.person-contacts .website-link:hover {
+  text-decoration: underline;
+}
+
+/* Let only the website URL break anywhere if it’s long */
+.person-contacts .website-link {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+
+.person-header-meta {
+  font-size: 1.25rem;  /* bigger text */
+  font-weight: 600;    /* optional: make it bold */
+  line-height: 1.4;    /* spacing tweak */
+}
+
+.cv-link,
+.cv-link:visited {
+  color: #333;              /* or use inherit */
+  text-decoration: none;
+}
+
+.cv-link:hover {
+  color: #333;
+  text-decoration: underline; /* optional */
+}
+
+
+.person-page .person-header {
+  margin-top: 0;
+}
+
+
+
+
+/* unify table text with normal body text */
+table,
+table th,
+table td {
+  font-family: $global-font-family !important;
+  font-size: 1em !important;   /* match body size */
+  font-weight: normal;
+}

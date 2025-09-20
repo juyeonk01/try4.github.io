@@ -1,0 +1,44 @@
+# Submitted / Preprint
+- year: 2025
+  status: submitted
+  authors: "Bong, S., and Lee, K."
+  title: "Local causal effects with continuous exposures: A matching estimator for the average derivative effect."
+  venue: "Submitted."
+  links: { arxiv: "" }
+
+- year: 2025
+  status: submitted
+  authors: "Lee, S., and Lee, K."
+  title: "Evaluating time-specific treatment effects in matched-pairs studies."
+  venue: "Submitted."
+  links: { arxiv: "" }
+
+- year: 2025
+  status: submitted
+  authors: "Jang, J., Kim, S., and Lee, K."
+  title: "Improving causal estimation by mixing samples to address weak overlap in observational studies."
+  venue: "Submitted."
+  links: { arxiv: "" }
+
+
+# Published
+- year: 2025
+  status: published
+  authors: "Lee, Z., and Lee, K."
+  title: "Causal interaction and effect modification: A randomization-based approach to inference."
+  venue: "Journal of the Korean Statistical Society, to appear."
+  links: { paper: "" }
+
+- year: 2024
+  status: published
+  authors: "Jung, D., Yoon, Y., and Lee, K."
+  title: "Analyzing the causal impact of streaming service usage on IPTV viewing."
+  venue: "The Korean Journal of Applied Statistics, 37(5), 675–690."
+  links: { paper: "" }
+
+- year: 2024
+  status: published
+  authors: "Bong, S., Lee, K., and Dominici, F."
+  title: "Differential recall bias in estimating treatment effects in observational studies."
+  venue: "Biometrics, 80(2)."
+  links: { paper: "" }

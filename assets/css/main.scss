@@ -1,0 +1,158 @@
+---
+---
+
+@import "minimal-mistakes/skins/default";
+
+$max-width:     1800px;   /* outer container */
+$content-width: 1200px;   /* readable text column */
+$right-sidebar-width: 0; 
+
+/* ------------------------------------------------------------------------------------ */
+/* typefaces */
+$serif: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif !default;
+$sans-serif: "Work Sans", "Public Sans", "Helvetica Neue", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+   "Lucida Grande", Arial, sans-serif !default;
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$sans-serif-narrow: $sans-serif !default;
+
+$global-font-family           : $sans-serif !default;
+$header-font-family           : $serif !default;
+$caption-font-family          : $sans-serif !default;
+
+/* type scale */
+$type-size-1: 2.441em !default;
+$type-size-2: 1.953em !default;
+$type-size-3: 1.563em !default;
+$type-size-4: 1.25em !default;
+$type-size-5: 1.1em !default;
+$type-size-6: 0.8em !default;
+$type-size-7: 0.8em !default;
+$type-size-8: 0.625em !default;
+
+/* headline scale */
+$h-size-1: 2em !default; // bigger h1
+$h-size-2: 1.4em !default; // bigger h2
+$h-size-3: 1.2em  !default; // bigger h3
+$h-size-4: 1.0625em !default;
+$h-size-5: 1.03125em !default;
+$h-size-6: 1em !default;
+/* ------------------------------------------------------------------------------------ */
+
+/* Load theme AFTER overriding variables */
+@import "minimal-mistakes";
+
+@import "footer";
+@import "news";
+@import "person";
+@import "navigation";
+
+
+html {
+    font-size: 12px;
+    @include breakpoint($medium) {
+      font-size: 14px;
+    }
+    @include breakpoint($large) {
+      font-size: 16px;
+    }
+    @include breakpoint($x-large) {
+      font-size: 18px;
+    }
+  }
+
+/* Absolutely remove any reserved sidebar space on single pages */
+.layout--single .sidebar,
+.layout--single .page__sidebar,
+.layout--single .sticky { display: none !important; }
+
+/* Force the page to stop using the theme's calc(... - $right-sidebar-width) */
+/* Page width = content width */
+.layout--single #main > .page {
+  float: none !important;
+  width: 100% !important;
+  max-width: $content-width !important;
+  margin: 0 auto !important;
+}
+
+/* hide prev/next pager under pages/posts */
+.pagination { display: none !important; }
+
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------ Overall --------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* Background color */
+body {
+  background-color: #FAFAFA;
+}
+
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
+  background-color: #FAFAFA !important;
+  box-shadow: none !important;
+}
+
+.page__footer {
+  background-color: #FAFAFA !important;
+}
+
+
+/* Spacing */
+.page__title,
+.page__meta {
+  margin-top: 1.5rem; 
+}
+
+.page__header {
+  padding-top: 1.5rem;
+}
+
+.page__header + .page__content {
+  padding-top: 1.5rem !important;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------------ Pages ----------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+/* Homepage */
+.homepage h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.causal-image {
+  display: block;
+  margin: 0 auto 3rem auto !important;
+}
+
+
+/* Publications page */
+.pub-section {
+  border-top: 2px solid rgba(0,0,0,.2);
+  margin: 2rem 0 1rem;  
+  padding-top: 1.25rem; 
+}
+
+.pub-item {
+  margin: 0.75rem 0;
+  line-height: 1.5;
+}
+
+.pub-title {
+  font-weight: 500 !important;
+}
+
+
+/* Seminar page */
+.seminar-page h2 {
+  border-bottom: 1px solid rgba(48,48,48,0.2) !important;
+  margin-top: 4rem !important; 
+}
+
+.seminar-page h2:first-of-type {
+  margin-top: 1.5rem !important;
+}
+
