@@ -16,5 +16,5 @@ email: pasyung@snu.ac.kr
 
 ## Education
 
-* M.S. in Statistics, Seoul National University, Sep 2024 ~ Present
-* B.S. in Economics, Yonsei University, Mar 2014 ~ Feb 2024
+* **M.S. in Statistics**, Seoul National University, Sep 2024 - Present
+* **B.S. in Economics**, Yonsei University, Mar 2014 - Feb 2024
