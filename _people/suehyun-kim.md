@@ -15,5 +15,5 @@ website: https://suehkim.github.io/
 
 ## Education
 - **M.S. in Statistics**, Seoul National University, Sep 2024 - Present
-- **B.S. in Mathematical Sciences & Statistics** (Double Major), Mar 2019 - Aug 2024
+- **B.S. in Mathematical Sciences & Statistics** (Double Major), Seoul National University, Mar 2019 - Aug 2024
 
