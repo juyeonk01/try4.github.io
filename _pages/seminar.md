@@ -30,8 +30,6 @@ classes: seminar-page
 
 ### Paper reviews
 
-* ?? Mendelian Randomization
-* ?? Influence Function and Efficiency Theory
 * Probabilities of causation: three counterfactual interpretations and their identification (Pearl, 1999)  
 * Sensitivity analysis for matched observational studies with continuous exposures and binary outcomes (Zhang, Small, and Rosenbaum, 2011)  
 * Robust estimation of causal effects via a high-dimensional covariate balancing propensity score (Ning, Peng, and Imai, 2020)  
@@ -46,6 +44,8 @@ classes: seminar-page
 * Evidence factors from multiple, possibly invalid, instrumental variables (Zhao, Wang, and Small, 2022)  
 * Finding influential subjects in a network using a causal framework (Lee, Kim, and Wang, 2023)  
 * Neural score matching for high-dimensional causal inference (Clivio, Mikkelsen, and van der Laan, 2022)  
+* Mendelian Randomization
+* Influence Function and Efficiency Theory
 
 
 ### Book review
