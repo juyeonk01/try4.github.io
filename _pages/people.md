@@ -31,7 +31,7 @@ layout: single
 </div>
 
 <div class="alumni">
-  <h1 class="people-title">Alumni</h1>
+  <h1 class="people-title" style="margin-top: -1rem !important;">Alumni</h1>
   <div class="alumni-list">
     <ul>
       <li>Junho Jang, Master's (2025). Economist, the Bank of Korea.</li>
