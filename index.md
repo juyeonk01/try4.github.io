@@ -189,7 +189,8 @@ entries_layout: list
 * News
   * Add more news
 * Misc.
-  * Remove space at the bottom
+  * Mobile-friendly
+  * News - yaml?
   * Copyright messgae
   * Contact info at the footer? (causal email)
   * Remove unnecessary code and images and files
