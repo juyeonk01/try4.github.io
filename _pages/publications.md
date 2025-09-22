@@ -1,13 +1,14 @@
 ---
 title: Publications
 layout: single
+classes: publications-page
 ---
 
 <p><em>*: equally contributing co-first authors</em></p>
 
 {%- assign all = site.data.publications -%}
 
-
+<hr>
 
 <h3 class="pub-section">Working Papers</h3>
 {%- assign subs = all | where: "status", "submitted" -%}
@@ -32,7 +33,7 @@ layout: single
 {%- endfor -%}
 
 
-
+<hr>
 
 {%- comment -%} Published section {%- endcomment -%}
 

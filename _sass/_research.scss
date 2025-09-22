@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin: 2rem auto 4rem;
+  margin: 2rem auto 3rem;
   flex-wrap: wrap;
 }
 
@@ -22,6 +22,12 @@
   color: #fff;
 }
 
+.research-page hr {
+  border: none;              
+  border-top: 1px solid #ccc;   
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;     
+}
 
 
 /* Section layout */
@@ -29,13 +35,16 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin: 0;
   align-items: start !important; /* fix vertical misalignment */
   scroll-margin-top: 50px;
 }
 
 .topic-title {
   font-weight: 900;
+  color: #2f6f88;
+  border-left: 4px solid #2f6f88;
+  padding-left: 0.6rem;
   // text-decoration: none !important;
   border-bottom: none !important;
   margin: 0;

@@ -2,90 +2,90 @@ var store = [{
         "title": "Eurocim",
         "excerpt":"Jaehyuk gave a talk on joint work with Suehyun on Mixing Samples to Address Weak Overlap in Causal Inference at the 2025 European Causal Inference Meeting (EuroCIM), held in Ghent, Belgium. + Poster   ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/news/2025-04-09-eurocim/",
+        "url": "/try4.github.io/news/2025-04-09-eurocim/",
         "teaser": null
       },{
         "title": "Acic",
         "excerpt":"Suehyun presented joint work with Jaehyuk on Mixing Samples to Address Weak Overlap in Causal Inference at the 2025 American Causal Inference Conference (ACIC) held in Detroit, Michigan. + Poster  ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/news/2025-05-14-acic/",
+        "url": "/try4.github.io/news/2025-05-14-acic/",
         "teaser": null
       },{
         "title": "Kss",
         "excerpt":"At the 2025 KSS Summer Conference in Gyeongju, Suehyun gave a talk on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference. In the poster session, Geondo and Juyeon presented Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment, and Zion presented Causal Interaction and...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/news/2025-06-20-kss/",
+        "url": "/try4.github.io/news/2025-06-20-kss/",
         "teaser": null
       },{
         "title": "News",
         "excerpt":"2025 Jun 20 At the 2025 KSS Summer Conference in Gyeongju, Suehyun gave a talk on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference. In the poster session, Geondo and Juyeon presented Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment, and Zion presented...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/news/",
+        "url": "/try4.github.io/news/",
         "teaser": null
       },{
         "title": "Lab Members",
         "excerpt":"Kwonsang Lee Faculty Hajoung Lee Postdoctoral Fellow Geondo Park Ph.D. Student Zion Lee Ph.D. Student Juyeon Kim Ph.D. Student Suehyun Kim Master's Student Sangyong Park Master's Student Alumni Junho Jang, Master's (2025). Economist, the Bank of Korea. Jaehyuk Jang, Master's (2025). Ph.D. student, Rutgers University (since 2025). Sangjin Lee, Master's...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/",
+        "url": "/try4.github.io/people/",
         "teaser": null
       },{
         "title": "Publications",
         "excerpt":"*: equally contributing co-first authors Working Papers Bong, S., and Lee, K. (2025+). Local causal effects with continuous exposures: A matching estimator for the average derivative effect. Submitted. Lee, S., and Lee, K. (2025+). Evaluating time-specific treatment effects in matched-pairs studies. Submitted. Jang, J., Kim, S., and Lee, K. (2025+)....","categories": [],
         "tags": [],
-        "url": "/try3.github.io/publications/",
+        "url": "/try4.github.io/publications/",
         "teaser": null
       },{
         "title": "Our Projects by Topics",
         "excerpt":"Matching &amp; Design Overlap &amp; Robustness Inference Complex Structures Applications Matching and Design High-Dimensional Matching with Hajeong Lee This project develops a new many-to-many matching algorithm for high-dimensional settings that does not rely on outcome information. The goal is to construct matched sets that achieve strong covariate balance even when...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/research/",
+        "url": "/try4.github.io/research/",
         "teaser": null
       },{
         "title": "Seminar",
         "excerpt":"2025 Lab Seminar Paper reviews Causal fairness analysis (Plečko and Bareinboim, 2024) [Ch1-Ch5] Covariate-adaptive randomization inference in matched designs (Pimentel and Huang, 2024) Sensitivity analysis for attributable effects in Case2 studies (Kan et al., 2024) Conformal inference of counterfactuals and individual treatment effects (Lei, Robins, and Wasserman, 2021) Testing generalizability...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/seminar/",
+        "url": "/try4.github.io/seminar/",
         "teaser": null
       },{
         "title": "Geondo Park",
         "excerpt":"Research Topic     Overlap   Education     Ph.D. in Statistics, Seoul National University, Mar 2023 - Present   B.S. in Statistics, Seoul National University, Mar 2017 - Aug 2023  ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/geondo-park/",
+        "url": "/try4.github.io/people/geondo-park/",
         "teaser": null
       },{
         "title": "Hajoung Lee",
         "excerpt":" ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/hajoung-lee/",
+        "url": "/try4.github.io/people/hajoung-lee/",
         "teaser": null
       },{
         "title": "Juyeon Kim",
         "excerpt":"Research topic      Overlap   Education           Ph.D. in Statistics, Seoul National University, Sep 2024 - Present            B.S. in Statistics, B.S. Computer Science and Engineering, Seoul National University, Mar 2020 - Aug 2024       ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/juyeon-kim/",
+        "url": "/try4.github.io/people/juyeon-kim/",
         "teaser": null
       },{
         "title": "Kwonsang Lee",
         "excerpt":"Academic Appointments Associate Professor, Department of Statistics, Seoul National University, 2025 – Present Assistant Professor, Department of Statistics, Seoul National University, 2021 – 2025 Assistant Professor, Department of Statistics, Sungkyunkwan University, 2020 – 2021 Research Associate, Department of Biostatistics, Harvard T.H. Chan School of Public Health, 2019 – 2020 Mentor:...","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/kwonsang-lee/",
+        "url": "/try4.github.io/people/kwonsang-lee/",
         "teaser": null
       },{
         "title": "Sangyong Park",
-        "excerpt":"blah  ","categories": [],
+        "excerpt":"Research Interests      Matching methods with Quantum Computing   Variable selection in Causal inference   Education      M.S. in Statistics, Seoul National University, Sep 2024 - Present   B.S. in Economics, Yonsei University, Mar 2014 - Feb 2024  ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/sangyong-park/",
+        "url": "/try4.github.io/people/sangyong-park/",
         "teaser": null
       },{
         "title": "Suehyun Kim",
-        "excerpt":"Research Topics     Robust estimation of causal effects   Causal inference in time-series cross-sectional data   Education     M.S. in Statistics, Seoul National University, Sep 2024 - Present   B.S. in Mathematical Sciences &amp; Statistics (Double Major), Mar 2019 - Aug 2024   ","categories": [],
+        "excerpt":"Research Topics     Robust estimation of causal effects   Causal inference in time-series cross-sectional data   Education     M.S. in Statistics, Seoul National University, Sep 2024 - Present   B.S. in Mathematical Sciences &amp; Statistics (Double Major), Seoul National University, Mar 2019 - Aug 2024   ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/suehyun-kim/",
+        "url": "/try4.github.io/people/suehyun-kim/",
         "teaser": null
       },{
         "title": "Zion Lee",
         "excerpt":"Research Interests   Causal interactions, Mediation, Probability of Causation, Sufficient Cause model   Education      Ph.D. in Statistics, Integrated Master’s and Ph.D. Program, Seoul National University   B.S. in Mathematics Education (major) and Statistics (double major), Sungkyunkwan University   ","categories": [],
         "tags": [],
-        "url": "/try3.github.io/people/zion-lee/",
+        "url": "/try4.github.io/people/zion-lee/",
         "teaser": null
       },]

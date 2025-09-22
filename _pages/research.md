@@ -3,6 +3,7 @@ layout: single
 title: "Our Projects by Topics"
 ---
 
+
 <!-- Top navigation -->
 <nav class="research-topnav">
   <a href="#matching">Matching & Design</a>
@@ -14,6 +15,7 @@ title: "Our Projects by Topics"
 
 <div class="research-page">
 
+  <hr>
   <!-- Matching -->
   <section id="matching" class="research-section">
     <h2 class="topic-title">Matching and Design</h2>
@@ -72,6 +74,8 @@ title: "Our Projects by Topics"
     </div>
   </section>
 
+  <hr>
+
   <!-- Overlap -->
   <section id="overlap" class="research-section">
     <h2 class="topic-title">Overlap and Robustness</h2>
@@ -105,6 +109,8 @@ title: "Our Projects by Topics"
 
     </div>
   </section>
+
+  <hr>
 
   <!-- Inference -->
   <section id="inference" class="research-section">
@@ -155,6 +161,8 @@ title: "Our Projects by Topics"
     </div>
   </section>
 
+  <hr>
+
   <!-- Complex -->
   <section id="complex" class="research-section">
     <h2 class="topic-title">Complex Structures</h2>
@@ -176,6 +184,8 @@ title: "Our Projects by Topics"
 
     </div>
   </section>
+
+  <hr>
 
   <!-- Applications -->
   <section id="applications" class="research-section">

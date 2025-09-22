@@ -137,10 +137,17 @@ html {
 /* Publications page */
 .pub-section {
   // border-top: 2px solid rgba(0,0,0,.2);
-  margin: 2rem 0 1rem;  
-  padding-top: 1.25rem; 
+  margin: 0rem 0 1.5rem;  
+  // padding-top: 1.25rem; 
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.publications-page hr {
+  border: none;              
+  border-top: 1px solid #ccc;   
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h4.pub-year {
@@ -184,6 +191,9 @@ h4.pub-year {
 .pub-link img {
   display: inline-block;
 }
+
+
+
 
 
 /* Seminar page */
