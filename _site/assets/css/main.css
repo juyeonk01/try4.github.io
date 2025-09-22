@@ -1345,7 +1345,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 /* copyright line: even smaller */
 .page__footer .copyright { font-size: 0.75rem; margin: 0 !important; color: #666666; }
 
-.homepage h2 { border-bottom: none !important; padding-bottom: 0 !important; }
+.homepage h2 { border-bottom: none !important; padding-bottom: 0 !important; margin-top: 1rem; }
 
 .profile-hero { background-color: #eaeaea; width: 100vw; /* force full viewport width */ margin-left: calc(-50vw + 50%); /* shift left to align */ padding: 3rem 0; }
 
@@ -1413,9 +1413,11 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .research-list li { margin: 0.25rem 0; }
 
-.topics-grid { margin-top: 3rem; max-width: 1100px; display: grid; grid-template-columns: repeat(4, 1fr); /* default: 4×1 on wide screens */ gap: 4rem; /* space between cards */ justify-items: center; /* center each card in its cell */ }
+.topics-grid { display: grid; margin-top: 2rem; margin-bottom: 0; max-width: 1100px; grid-template-columns: repeat(4, 1fr); /* default: 4×1 on wide screens */ gap: 3rem; /* space between cards */ justify-items: center; /* center each card in its cell */ }
 
-.topic-card { border-radius: 12px; padding: 0.5rem; cursor: pointer; /* makes it look clickable */ }
+.topic-card { border-radius: 12px; padding: 0.5rem; text-decoration: none; color: #333; padding: 1em 1em 0em 1em; cursor: pointer; /* makes it look clickable */ }
+
+.topic-card:visited { color: #333; }
 
 .topic-card:hover { transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); }
 

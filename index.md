@@ -48,10 +48,9 @@ entries_layout: list
   </div>
 </div>
 
-<br>
 
 <div class="prof-educ">
-  <h2>Education</h2>
+  <h2 style="margin-top: 0rem !important;">Education</h2>
   <ul class="edu-list">
     <li class="edu-item">
       <div class="edu-dates">2017–2020</div>
@@ -91,37 +90,33 @@ entries_layout: list
 </div>
 
 
-<br>
-
 
 <div class="prof-research">
-  <h2>Research Interests</h2>
+  <h2 style="margin-top: 5rem !important;">Research Interests</h2>
   <div class="topics-grid">
-    <div class="topic-card">
+    <a class="topic-card" href="{{ '/research/#matching' | relative_url}}">
       <div class="icon"><i class="fas fa-link"></i></div>
       <h4>Matching and Design</h4>
       <p>high-dimensional matching, matching with quantum computing, many-to-many</p>
-    </div>
-    <div class="topic-card">
+    </a>
+    <a class="topic-card" href="{{ '/research/#inference' | relative_url}}">
       <div class="icon"><i class="fas fa-chart-line"></i></div>
       <h4>Inference</h4>
       <p>heterogeneous effect, causal interaction, sensitivity analysis</p>
-    </div>
-    <div class="topic-card">
+    </a>
+    <a class="topic-card" href="{{ '/research/#overlap' | relative_url}}">
       <div class="icon"><i class="fas fa-shield-alt"></i></div>
       <h4>Overlap &amp; Robustness</h4>
       <p>diagnostics, quantifying overlap</p>
-    </div>
-    <div class="topic-card">
+    </a>
+    <a class="topic-card" href="{{ '/research/#complex' | relative_url}}">
       <div class="icon"><i class="fas fa-network-wired"></i></div>
       <h4>Complex Structure</h4>
       <p>multiple treatments, time-series data, mediation</p>
-    </div>
+    </a>
   </div>
 </div>
 
-
-<br>
 
 
 <div class="home-news">
