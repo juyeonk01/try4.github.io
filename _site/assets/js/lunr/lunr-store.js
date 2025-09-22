@@ -1,24 +1,54 @@
 var store = [{
+        "title": "Grant",
+        "excerpt":"NRF Mid-Career Research Grant awarded.  ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2025-03-01-grant/",
+        "teaser": null
+      },{
         "title": "Eurocim",
-        "excerpt":"Jaehyuk gave a talk on joint work with Suehyun on Mixing Samples to Address Weak Overlap in Causal Inference at the 2025 European Causal Inference Meeting (EuroCIM), held in Ghent, Belgium. + Poster   ","categories": [],
+        "excerpt":"Jaehyuk gave a talk on joint work with Suehyun on Mixing Samples to Address Weak Overlap in Causal Inference at EuroCIM 2025, held in Ghent, Belgium.   ","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/2025-04-09-eurocim/",
         "teaser": null
       },{
         "title": "Acic",
-        "excerpt":"Suehyun presented joint work with Jaehyuk on Mixing Samples to Address Weak Overlap in Causal Inference at the 2025 American Causal Inference Conference (ACIC) held in Detroit, Michigan. + Poster  ","categories": [],
+        "excerpt":"Suehyun presented joint work with Jaehyuk on Mixing Samples to Address Weak Overlap in Causal Inference at the ACIC 2025, held in Detroit, Michigan.  ","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/2025-05-14-acic/",
         "teaser": null
       },{
         "title": "Kss",
-        "excerpt":"At the 2025 KSS Summer Conference in Gyeongju, Suehyun gave a talk on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference. In the poster session, Geondo and Juyeon presented Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment, and Zion presented Causal Interaction and...","categories": [],
+        "excerpt":"Suehyun presented at the KSS Summer Conference 2025 in Gyeongju, on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference.  ","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/2025-06-20-kss/",
         "teaser": null
       },{
+        "title": "Penn",
+        "excerpt":"Visiting Scholar appointment at UPenn Stats &amp; DS.   ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2025-07-16-penn/",
+        "teaser": null
+      },{
+        "title": "Associate Professor",
+        "excerpt":"Promoted to Associate Professor (Department of Statistics, Seoul National University).  ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2025-09-01-associate-professor/",
+        "teaser": null
+      },{
+        "title": "Cci Seminar",
+        "excerpt":"Presented at Center for Causal Inference (CCI) Seminar.  ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2025-09-11-cci-seminar/",
+        "teaser": null
+      },{
+        "title": "Penn",
+        "excerpt":"Geondo, Zion, Juyeon begin Visiting Scholar appointments at the Center for Causal Inference (CCI), University of Pennsylvania.  ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2026-01-14-penn/",
+        "teaser": null
+      },{
         "title": "News",
-        "excerpt":"2025 Jun 20 At the 2025 KSS Summer Conference in Gyeongju, Suehyun gave a talk on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference. In the poster session, Geondo and Juyeon presented Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment, and Zion presented...","categories": [],
+        "excerpt":"Upcoming (2026) Jan Geondo, Zion, Juyeon begin Visiting Scholar appointments at the Center for Causal Inference (CCI), University of Pennsylvania. 2025 Sep 🎓 Presented at Center for Causal Inference (CCI) Seminar. Sep 🎓 Promoted to Associate Professor (Department of Statistics, Seoul National University). Jul 🎓 Visiting Scholar appointment at UPenn...","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/",
         "teaser": null
