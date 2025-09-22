@@ -48,7 +48,7 @@ var store = [{
         "teaser": null
       },{
         "title": "News",
-        "excerpt":"Upcoming (2026) Jan Geondo, Zion, Juyeon begin Visiting Scholar appointments at the Center for Causal Inference (CCI), University of Pennsylvania. 2025 Sep 🎓 Presented at Center for Causal Inference (CCI) Seminar. Sep 🎓 Promoted to Associate Professor (Department of Statistics, Seoul National University). Jul 🎓 Visiting Scholar appointment at UPenn...","categories": [],
+        "excerpt":"Upcoming Jan 2026 Geondo, Zion, Juyeon begin Visiting Scholar appointments at the Center for Causal Inference (CCI), University of Pennsylvania. 2025 Sep 🎓 Presented at Center for Causal Inference (CCI) Seminar. Sep 🎓 Promoted to Associate Professor (Department of Statistics, Seoul National University). Jul 🎓 Visiting Scholar appointment at UPenn...","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/",
         "teaser": null

@@ -16,8 +16,9 @@ author_profile: false
       <h2 class="news-year">{{ year }}</h2>
       {% assign current_year = year %}
     {% endif %} -->
+
     {% if item.upcoming %}
-      {% assign group = "Upcoming (" | append: year | append: ")" %}
+      {% assign group = "Upcoming" %}
     {% else %}
       {% assign group = year %}
     {% endif %}
@@ -25,10 +26,13 @@ author_profile: false
       <h2 class="news-year">{{ group }}</h2>
       {% assign current_group = group %}
     {% endif %}
+    
     <li class="news-row">
       <span class="news-date">
         {% if item.short_date %}
           {{ item.date | date: "%b" }}
+        {% elsif item.year %}
+          {{ item.date | date: "%b %Y" }}
         {% else %}
           {{ item.date | date: "%b %d" }}
         {% endif %}

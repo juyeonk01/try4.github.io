@@ -1443,9 +1443,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .news-list h2 { margin-top: 2em; font-weight: bold; border-bottom: none !important; padding-bottom: 0 !important; }
 
-.news-row { display: flex; align-items: flex-start; padding: 0.5rem 0; }
+.news-row { display: flex; align-items: baseline; padding: 0.5rem 0; }
 
-.news-date { flex: 0 0 80px; /* fixed width for date */ color: #777; font-size: 0.9rem; }
+.news-date { flex: 0 0 100px; margin-right: 1rem; color: #777; font-size: 0.9rem; }
 
 .news-entry { flex: 1; line-height: 1.5; }
 

@@ -20,12 +20,13 @@
 
 .news-row {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   padding: 0.5rem 0;
 }
 
 .news-date {
-  flex: 0 0 80px; /* fixed width for date */
+  flex: 0 0 100px; 
+  margin-right: 1rem;
   color: #777;
   font-size: 0.9rem;
 }
