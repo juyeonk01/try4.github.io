@@ -3,6 +3,7 @@ title: Lab Members
 layout: single
 ---
 
+<div class="people-section">
 <div class="people-grid">
   {% assign members = site.people | sort: "order" %}
   {% for p in members %}
@@ -27,7 +28,7 @@ layout: single
     </div>
   {% endfor %}
 </div>
-
+</div>
 
 <div class="alumni">
   <h1 class="people-title">Alumni</h1>
