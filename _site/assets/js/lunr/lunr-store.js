@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Symposium",
+        "excerpt":"Our lab hosted the 2024 Causal Inference Symposium in Konjiam, Korea.   ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2024-08-27-symposium/",
+        "teaser": null
+      },{
         "title": "Grant",
         "excerpt":"NRF Mid-Career Research Grant awarded.  ","categories": [],
         "tags": [],
@@ -21,6 +27,12 @@ var store = [{
         "excerpt":"Suehyun presented at the KSS Summer Conference 2025 in Gyeongju, on joint work with Jaehyuk, Mixing Samples to Address Weak Overlap in Causal Inference.  ","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/2025-06-20-kss/",
+        "teaser": null
+      },{
+        "title": "Symposium",
+        "excerpt":"2025 Causal Inference Symposium held at COEX convention center, Seoul, Korea.   ","categories": [],
+        "tags": [],
+        "url": "/try4.github.io/news/2025-06-30-symposium/",
         "teaser": null
       },{
         "title": "Penn",

@@ -160,12 +160,10 @@ entries_layout: list
 * Publications
   * Add DOI
 * People
-  * Individual pages
   * Better layout
     * Name card
     * Background color
 * Seminar
-  * 2024 2 reviews
   * Symposium -> to news
   * Under research?
 * News
