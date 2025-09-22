@@ -125,7 +125,7 @@ entries_layout: list
     <a class="home-news-more" href="{{ '/news/' | relative_url }}">View all →</a>
   </div>
 
-  <div class="home-news-right">
+  <!-- <div class="home-news-right">
     <ul class="news-list">
       {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
       {% for item in recent_news %}
@@ -133,6 +133,31 @@ entries_layout: list
           <span class="news-date">{{ item.date | date: "%b %d" }}</span>
           <span class="news-entry">{{ item.content | markdownify | strip }}</span>
         </li>
+      {% endfor %}
+    </ul>
+  </div> -->
+  <div class="home-news-right">
+    <ul class="news-list">
+      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
+      {% for item in recent_news %}
+        {% unless item.upcoming %}
+          <li class="news-row">
+            <span class="news-date">
+              {% if item.short_date %}
+                {{ item.date | date: "%b" }}
+              {% else %}
+                {{ item.date | date: "%b %d" }}
+              {% endif %}
+            </span>
+            <!-- <span class="news-entry">{{ item.content | markdownify | strip }}</span> -->
+            <span class="news-entry">
+              {% if item.professor %}
+                <span class="prof-icon">🎓</span>
+              {% endif %}
+              {{ item.content | markdownify | strip }}
+            </span>
+          </li>
+        {% endunless %}
       {% endfor %}
     </ul>
   </div>
