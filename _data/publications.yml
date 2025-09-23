@@ -30,18 +30,8 @@
   links: { arxiv: "https://arxiv.org/abs/2009.09036" }
 
 # --------------------------------------------------------------------------------------------
-# Published / to appear
+# Published
 # --------------------------------------------------------------------------------------------
-- year: 2027
-  status: published
-  authors: "Name 1"
-  title: "Pseudo 2"
-
-- year: 2026
-  status: published
-  authors: "Name 2"
-  title: "Pseudo 1"
-
 - year: 2025
   status: published
   authors: "Lee, Z., and Lee, K."
