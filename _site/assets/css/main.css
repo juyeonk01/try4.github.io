@@ -1375,6 +1375,8 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .icon-link:hover { color: #195466; }
 
+.icon-link:visited { color: #2f6f88; }
+
 .tooltip { position: absolute; bottom: -2rem; left: 50%; transform: translateX(-50%); background: #fff; color: #333; font-size: 0.8rem; font-weight: 500; padding: 0.3rem 0.6rem; border-radius: 4px; white-space: nowrap; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); opacity: 0; pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
 
 .icon-link:hover .tooltip { opacity: 1; transform: translateX(-50%) translateY(-3px); }
@@ -1561,14 +1563,14 @@ a.home-news-more:hover { color: #333 !important; }
 
 .research-topnav a { border: 1px solid #333; border-radius: 20px; padding: 0.5rem 1rem; text-decoration: none; color: #333; font-weight: 500; transition: background 0.2s ease, color 0.2s ease; }
 
-.research-topnav a:hover { background: #2f6f8866; color: #fff; }
+.research-topnav a:hover { background: #192e56; color: #fff; }
 
 .research-page hr { border: none; border-top: 1px solid #ccc; margin-top: 1.5rem; margin-bottom: 3rem; }
 
 /* Section layout */
 .research-section { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; margin: 0; align-items: start !important; /* fix vertical misalignment */ scroll-margin-top: 50px; }
 
-.topic-title { font-weight: 900; border-bottom: none !important; margin: 0; padding-top: 0.3rem; /* match project title */ }
+.topic-title { font-weight: 900; color: #192e56; border-bottom: none !important; margin: 0; padding-top: 0.3rem; /* match project title */ }
 
 /* Projects */
 .topic-projects article { margin-bottom: 2rem; padding: 1.2rem 1.4rem !important; border: 1px solid #e0e0e0; /* light border */ border-radius: 8px; /* rounded corners */ background-color: #f7f7f7; /* keep clean white */ }
@@ -1598,9 +1600,6 @@ html { font-size: 12px; }
 @media (min-width: 64em) { html { font-size: 16px; } }
 @media (min-width: 80em) { html { font-size: 18px; } }
 
-/* Absolutely remove any reserved sidebar space on single pages */
-.layout--single .sidebar, .layout--single .page__sidebar, .layout--single .sticky { display: none !important; }
-
 /* Force the page to stop using the theme's calc(... - $right-sidebar-width) */
 /* Page width = content width */
 .layout--single #main > .page { float: none !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; }
@@ -1609,19 +1608,19 @@ html { font-size: 12px; }
 .pagination { display: none !important; }
 
 /* ------------------------------------------------------------------------------------ */
-/* ------------------------------------ Overall --------------------------------------- */
+/*                                       Overall                                        */
 /* ------------------------------------------------------------------------------------ */
-/* Background color */
+html { scroll-behavior: smooth; }
+
+/* --------------------------------- Background color --------------------------------- */
 body { background-color: #FAFAFA; }
 
 .masthead, .masthead__inner-wrap, .greedy-nav { background-color: #FAFAFA !important; box-shadow: none !important; }
 
 .page__footer { background-color: #FAFAFA !important; }
 
-/* Spacing */
+/* ------------------------------------ Spacing --------------------------------------- */
 .page__title { margin-top: 1.5rem; }
-
-html { scroll-behavior: smooth; }
 
 .page__content { margin-bottom: 0rem !important; }
 
@@ -1630,10 +1629,9 @@ html { scroll-behavior: smooth; }
 .page__footer { margin-top: 0rem !important; padding-top: 1rem; }
 
 /* ------------------------------------------------------------------------------------ */
-/* ------------------------------------ Pages ----------------------------------------- */
+/*                                       Pages                                          */
 /* ------------------------------------------------------------------------------------ */
-/* Homepage */
-/* Publications page */
+/* -------------------------------- Publications page --------------------------------- */
 .pub-section { margin: 0rem 0 1.5rem; font-size: 1.5rem; font-weight: 600; }
 
 .publications-page hr { border: none; border-top: 1px solid #ccc; margin-top: 2.5rem; margin-bottom: 2rem; }
@@ -1648,13 +1646,13 @@ h4.pub-year { font-weight: 600 !important; font-family: "Libre Baskerville", "Me
 
 .pub-link:first-of-type .pub-icon { margin-left: 0rem !important; }
 
-.pub-link { display: inline-block; /* keeps it aligned to text */ line-height: 1; /* avoids extra vertical space */ vertical-align: middle !important; /* align anchor itself */ text-decoration: none !important; /* removes underline */ }
+.pub-link { display: inline-block; line-height: 1; vertical-align: middle !important; text-decoration: none !important; }
 
 .pub-icon:hover { opacity: 1; }
 
 .pub-link img { display: inline-block; }
 
-/* Seminar page */
+/* ---------------------------------- Seminar page ------------------------------------ */
 .seminar-page h2 { margin-top: 4rem !important; font-family: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 600 !important; border-bottom: 1.5px solid #eaeaea; }
 
 .seminar-page h3 { font-family: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-size: 1.1rem; font-weight: 900; margin-top: 2rem; }

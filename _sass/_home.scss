@@ -85,13 +85,17 @@
 .icon-link {
   position: relative;
   font-size: 1.5rem;
-  color: #2f6f88;      
+  color: #2f6f88;  
+  // color: #2E2E6F; 
+  // color: #192e56;   
   text-decoration: none;
   transition: color 0.2s ease;
 }
-
 .icon-link:hover {
   color: #195466;  
+}
+.icon-link:visited {
+  color: #2f6f88;  
 }
 
 .tooltip {
@@ -243,6 +247,8 @@
 .topic-card .icon i {
   font-size: 2rem;  
   margin-bottom: 1rem; 
+  // color: #0F0F70;
+  // color: #192e56;
   color: #2f6f88;
 }
 

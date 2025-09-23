@@ -8,7 +8,7 @@ classes: publications-page
 
 {%- assign all = site.data.publications -%}
 
-<hr>
+<hr style="margin-top: 0 !important;">
 
 <h3 class="pub-section">Working Papers</h3>
 {%- assign subs = all | where: "status", "submitted" -%}

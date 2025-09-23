@@ -63,10 +63,9 @@ html {
     }
   }
 
-/* Absolutely remove any reserved sidebar space on single pages */
-.layout--single .sidebar,
-.layout--single .page__sidebar,
-.layout--single .sticky { display: none !important; }
+// .layout--single .sidebar,
+// .layout--single .page__sidebar,
+// .layout--single .sticky { display: none !important; }
 
 /* Force the page to stop using the theme's calc(... - $right-sidebar-width) */
 /* Page width = content width */
@@ -80,11 +79,15 @@ html {
 /* hide prev/next pager under pages/posts */
 .pagination { display: none !important; }
 
-/* ------------------------------------------------------------------------------------ */
-/* ------------------------------------ Overall --------------------------------------- */
-/* ------------------------------------------------------------------------------------ */
 
-/* Background color */
+/* ------------------------------------------------------------------------------------ */
+/*                                       Overall                                        */
+/* ------------------------------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------- Background color --------------------------------- */
 body {
   background-color: #FAFAFA;
 }
@@ -100,22 +103,9 @@ body {
   background-color: #FAFAFA !important;
 }
 
-
-/* Spacing */
+/* ------------------------------------ Spacing --------------------------------------- */
 .page__title {
   margin-top: 1.5rem; 
-}
-
-// .page__header {
-//   padding-top: 1.5rem;
-// }
-
-// .page__header + .page__content {
-//   padding-top: 1.5rem !important;
-// }
-
-html {
-  scroll-behavior: smooth;
 }
 
 .page__content {
@@ -131,15 +121,11 @@ html {
   padding-top: 1rem; 
 }
 
-
 /* ------------------------------------------------------------------------------------ */
-/* ------------------------------------ Pages ----------------------------------------- */
+/*                                       Pages                                          */
 /* ------------------------------------------------------------------------------------ */
 
-/* Homepage */
-
-
-/* Publications page */
+/* -------------------------------- Publications page --------------------------------- */
 .pub-section {
   // border-top: 2px solid rgba(0,0,0,.2);
   margin: 0rem 0 1.5rem;  
@@ -184,10 +170,10 @@ h4.pub-year {
 }
 
 .pub-link {
-  display: inline-block;   /* keeps it aligned to text */
-  line-height: 1;          /* avoids extra vertical space */
-  vertical-align: middle !important;  /* align anchor itself */
-  text-decoration: none !important;   /* removes underline */
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle !important; 
+  text-decoration: none !important;
 }
 
 .pub-icon:hover {
@@ -198,10 +184,7 @@ h4.pub-year {
 }
 
 
-
-
-
-/* Seminar page */
+/* ---------------------------------- Seminar page ------------------------------------ */
 .seminar-page h2 {
   margin-top: 4rem !important;
   font-family: $serif-sub; 
@@ -220,6 +203,4 @@ h4.pub-year {
 .seminar-page h2:first-of-type {
   margin-top: 2rem !important;
 }
-
-
 

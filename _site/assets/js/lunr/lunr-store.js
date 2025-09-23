@@ -1,6 +1,6 @@
 var store = [{
         "title": "Symposium",
-        "excerpt":"Our lab hosted the 2024 Causal Inference Symposium in Konjiam, Korea.   ","categories": [],
+        "excerpt":"Our lab hosted the 2024 Causal Inference Symposium in Gonjiam, Korea.   ","categories": [],
         "tags": [],
         "url": "/try4.github.io/news/2024-08-27-symposium/",
         "teaser": null
