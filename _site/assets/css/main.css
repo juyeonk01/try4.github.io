@@ -1319,24 +1319,34 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
-.page__footer .page__footer-inner { width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; padding-left: 0 !important; /* kill gutters so edges line up */ padding-right: 0 !important; }
+:root { /* tweak these if your header is taller/shorter */ --masthead-h: 72px; }
 
-/* 1) LEFT-ALIGN EVERYTHING INSIDE THE FOOTER */
+@media (min-width: 768px) { :root { --masthead-h: 80px; } }
+@media (min-width: 1100px) { :root { --masthead-h: 88px; } }
+.masthead { position: fixed; top: 0; left: 0; right: 0; z-index: 2000; /* above page content */ background: #fff; border-bottom: 1px solid #e6e6e6; }
+
+/* push content down so it doesn't hide under the fixed header */
+.initial-content { padding-top: var(--masthead-h); }
+
+/* dropdown menu stays attached under the fixed bar */
+.greedy-nav .hidden-links { top: 100%; }
+
+/* optional: nicer feel on iOS while scrolling */
+.masthead, .masthead * { will-change: transform; }
+
+.page__footer .page__footer-inner { width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; padding-left: 0 !important; padding-right: 0 !important; }
+
 .page__footer, .page__footer .page__footer-inner, .page__footer .footer__content, .page__footer p, .page__footer div { text-align: left !important; }
 
-/* 3) REDUCE FOOTER HEIGHT (remove the big padding MM adds) */
-.page__footer { /* outer container padding */ padding: 0.5rem 0 !important; }
+.page__footer { padding: 0.5rem 0 !important; background: #FFFFFF !important; color: #808080 !important; }
 
-.page__footer .page__footer-inner { /* inner wrapper padding */ padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
+.page__footer .page__footer-inner { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
 
-/* kill default paragraph spacing that creates vertical gaps */
 .page__footer p { margin: 0.2rem 0 !important; }
 
 .page__footer:before { display: none !important; }
 
-.page__footer .page__footer-inner { border-top: 1px solid #666666 !important; padding-top: 1rem !important; /* keep breathing room */ padding-bottom: 0.5rem !important; }
-
-.page__footer { background: #FFFFFF !important; color: #808080 !important; }
+.page__footer .page__footer-inner { border-top: 1px solid #666666 !important; padding-top: 1rem !important; padding-bottom: 0.5rem !important; }
 
 .page__footer a { font-size: 0.95rem !important; color: #666666 !important; text-decoration: none; }
 
@@ -1456,11 +1466,11 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .prof-icon { margin-right: 0.4rem; font-size: 0.9rem; }
 
 /* ------------------------------------------------------------------------------------ */
-/* -------------------------------- Homepage news ------------------------------------- */
+/*                                      Home news                                       */
 /* ------------------------------------------------------------------------------------ */
-.home-news { display: grid; grid-template-columns: 180px 1fr; column-gap: 2rem; align-items: start; margin: 3rem 0 5rem; }
+.home-news { display: grid; grid-template-columns: 180px 1fr; column-gap: 2rem; align-items: start; margin: 3rem 0 0; }
 
-.home-news-left h2 { margin: 0 0 0.3rem 0; /* small bottom margin */ padding: 0; border-bottom: none !important; line-height: 1.2; }
+.home-news-left h2 { margin: 0 0 0.3rem 0; padding: 0; border-bottom: none !important; line-height: 1.2; }
 
 .home-news-right { display: flex; flex-direction: column; justify-content: flex-start; }
 
@@ -1479,7 +1489,7 @@ a.home-news-more:hover { color: #333 !important; }
   .home-news-left { margin-bottom: 0.5rem; } }
 .people-section { background-color: #f2f2f2; padding: 3rem 0; margin: 2rem 0 0 0; /* Break out of page content width */ width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
 
-.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 3rem; max-width: 1200px; /* constrain grid width */ margin: 0 auto; padding: 0 2rem; }
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
 .person-card { background: #fff; border: 1px solid #eee; overflow: hidden; text-align: left; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); transition: transform 0.2s ease; }
 
@@ -1493,7 +1503,19 @@ a.home-news-more:hover { color: #333 !important; }
 
 .person-role { font-size: 0.9rem; color: #555; margin-top: 0.2rem; }
 
-/* Person page header */
+/* ------------------------------------------------------------------------------------ */
+/*                                  Individual page                                     */
+/* ------------------------------------------------------------------------------------ */
+.person-page .page__meta, .person-page .comment__date { display: none !important; }
+
+/* -------------------------------------- Text ---------------------------------------- */
+.person-page strong { font-weight: 500 !important; }
+
+.person-page h2 { border-bottom: none !important; margin-top: 2rem !important; margin-bottom: 0 !important; }
+
+.person-page ul { margin-top: 0.5rem !important; }
+
+/* ------------------------------------ Header ---------------------------------------- */
 .person-header { display: grid; grid-template-columns: 220px 1fr; gap: 1.75rem; align-items: center; margin-bottom: 0.2rem; }
 
 .person-header-photo { width: 220px; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eee; margin-right: 1rem; }
@@ -1504,28 +1526,9 @@ a.home-news-more:hover { color: #333 !important; }
 @media (max-width: 900px) { .people-grid { grid-template-columns: repeat(2, minmax(0, 260px)); } }
 @media (max-width: 560px) { .people-grid { grid-template-columns: 1fr; }
   .person-header { grid-template-columns: 1fr; } }
+/* ------------------------------------- Info ----------------------------------------- */
 .person-info p { margin: 0.2rem 0; line-height: 1.4; }
 
-.edu-sub { margin-left: 1.5rem; display: block; }
-
-/* Add breathing room between the big page title and the person header */
-.page__content > .person-page:first-child { margin-top: 1rem !important; /* tweak 1.5–3rem to taste */ }
-
-.person-page h2, .person-page h3 { border-bottom: none !important; margin-top: 1rem !important; margin-bottom: 0rem !important; }
-
-.person-page strong { font-weight: 500 !important; }
-
-.person-degree { font-size: 1.2rem !important; /* slightly larger than normal text */ font-weight: 500; /* medium weight */ margin: 0 0 1rem 0 !important; /* small space below degree line */ }
-
-.person-page p { margin: 0.4rem 0; /* smaller gap between lines */ }
-
-.layout--person h2 { margin-top: 2rem !important; margin-bottom: 0rem !important; }
-
-.layout--person h2 + ul, .layout--person h3 + ul { margin-top: 0.5rem !important; }
-
-.layout--person .page__meta, .layout--person .comment__date { display: none !important; }
-
-/* Person page: icon + text rows (Office / Email / Website) */
 .person-contacts { display: flex; flex-direction: column; gap: 0.55rem; /* vertical space between rows */ margin-top: 0.5rem; }
 
 .person-contacts .contact-row { display: flex; align-items: center; gap: 0.7rem; /* horizontal space between icon and text */ }
@@ -1534,9 +1537,8 @@ a.home-news-more:hover { color: #333 !important; }
 
 .person-contacts .icon svg { width: 100%; height: 100%; display: block; stroke: currentColor; color: #253F7C; }
 
-.person-contacts .text { flex: 1 1 auto; /* text takes remaining width */ min-width: 0; /* prevents weird shrinking */ line-height: 1.5; /* comfortable line height */ }
+.person-contacts .text { flex: 1 1 auto; min-width: 0; line-height: 1.5; }
 
-/* Links: black, tidy wrapping for long URLs */
 .person-contacts .email-link, .person-contacts .website-link { color: #333 !important; text-decoration: none; }
 
 .person-contacts .email-link:hover, .person-contacts .website-link:hover { text-decoration: underline; }
@@ -1544,36 +1546,35 @@ a.home-news-more:hover { color: #333 !important; }
 /* Let only the website URL break anywhere if it’s long */
 .person-contacts .website-link { overflow-wrap: anywhere; word-break: normal; }
 
-.person-header-meta { font-size: 1.25rem; /* bigger text */ font-weight: 600; /* optional: make it bold */ line-height: 1.4; /* spacing tweak */ }
-
 .cv-link, .cv-link:visited { color: #333; /* or use inherit */ text-decoration: none; }
 
 .cv-link:hover { color: #333; text-decoration: underline; /* optional */ }
 
-.person-page .person-header { margin-top: 0; }
-
+/* ------------------------------------------------------------------------------------ */
+/*                                       Alumni                                         */
+/* ------------------------------------------------------------------------------------ */
 .alumni { margin-top: 5em; }
 
-.site-title { font-family: "Fraunces", "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 700; }
+.research-page hr { border: none; border-top: 1px solid #ccc; margin-top: 1.5rem; margin-bottom: 3rem; }
 
-.masthead, .greedy-nav { background: transparent !important; /* let wrapper's bg show through */ border-bottom: none !important; box-shadow: none !important; }
-
-/* Top navigation */
+/* ------------------------------------------------------------------------------------ */
+/*                                   Top navigation                                     */
+/* ------------------------------------------------------------------------------------ */
 .research-topnav { display: flex; justify-content: center; gap: 1.5rem; margin: 2rem auto 3rem; flex-wrap: wrap; }
 
 .research-topnav a { border: 1px solid #333; border-radius: 20px; padding: 0.5rem 1rem; text-decoration: none; color: #333; font-weight: 500; transition: background 0.2s ease, color 0.2s ease; }
 
 .research-topnav a:hover { background: #192e56; color: #fff; }
 
-.research-page hr { border: none; border-top: 1px solid #ccc; margin-top: 1.5rem; margin-bottom: 3rem; }
-
-/* Section layout */
+/* ------------------------------------------------------------------------------------ */
+/*                                   Section layout                                     */
+/* ------------------------------------------------------------------------------------ */
 .research-section { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; margin: 0; align-items: start !important; /* fix vertical misalignment */ scroll-margin-top: 50px; }
 
 .topic-title { font-weight: 900; color: #192e56; border-bottom: none !important; margin: 0; padding-top: 0.3rem; /* match project title */ }
 
-/* Projects */
-.topic-projects article { margin-bottom: 2rem; padding: 1.2rem 1.4rem !important; border: 1px solid #e0e0e0; /* light border */ border-radius: 8px; /* rounded corners */ background-color: #f7f7f7; /* keep clean white */ }
+/* ------------------------------------ Projects -------------------------------------- */
+.topic-projects article { margin-bottom: 2rem; padding: 1.2rem 1.4rem !important; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f7f7f7; }
 
 .topic-projects h3 { padding-top: 0.3rem; margin: 0 0 0.3rem; font-weight: 900; font-size: 1.2rem; }
 
@@ -1581,9 +1582,7 @@ a.home-news-more:hover { color: #333 !important; }
 
 .project-people { font-style: italic; font-weight: 400; color: #666; margin: 0.5rem 0 0.7rem !important; font-size: 0.9rem; }
 
-/* Tags */
-.tags { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 0.3rem; }
-
+/* -------------------------------------- Tags ---------------------------------------- */
 .tag { display: inline-block; font-size: 0.85rem; padding: 0.15rem 0.6rem; border-radius: 12px; background-color: #fafafa; border: 1px solid #e0e0e0; color: #333; text-decoration: none; transition: background 0.2s ease; box-shadow: none; }
 
 .tag:hover { background-color: #fafafa; box-shadow: none; }
@@ -1592,6 +1591,9 @@ a.home-news-more:hover { color: #333 !important; }
 
 .tag-label { font-size: 0.85rem; margin-right: 0.4rem; color: #555; font-style: italic; }
 
+/* ------------------------------------------------------------------------------------ */
+/*                                   Section layout                                     */
+/* ------------------------------------------------------------------------------------ */
 /* Responsive: stack on smaller screens */
 @media (max-width: 768px) { .research-section { grid-template-columns: 1fr; }
   .topic-title { margin-bottom: 1rem; } }
@@ -1600,17 +1602,23 @@ html { font-size: 12px; }
 @media (min-width: 64em) { html { font-size: 16px; } }
 @media (min-width: 80em) { html { font-size: 18px; } }
 
-/* Force the page to stop using the theme's calc(... - $right-sidebar-width) */
-/* Page width = content width */
-.layout--single #main > .page { float: none !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; }
-
-/* hide prev/next pager under pages/posts */
-.pagination { display: none !important; }
-
 /* ------------------------------------------------------------------------------------ */
 /*                                       Overall                                        */
 /* ------------------------------------------------------------------------------------ */
+/* Page width = content width */
+.layout--single #main > .page { float: none !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important; }
+
+.pagination { display: none !important; }
+
 html { scroll-behavior: smooth; }
+
+.site-title { font-family: "Fraunces", "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif; font-weight: 700; }
+
+.masthead, .greedy-nav { background: transparent !important; /* let wrapper's bg show through */ border-bottom: none !important; box-shadow: none !important; }
+
+.site-header { position: fixed; top: 0; left: 0; width: 100%; /* span full width */ z-index: 1000; /* keep above other elements */ background: #fff; /* or whatever your header background is */ border-bottom: 1px solid #ddd; /* optional divider line */ }
+
+.page-content { padding-top: 80px; /* adjust this to match your header’s height */ }
 
 /* --------------------------------- Background color --------------------------------- */
 body { background-color: #FAFAFA; }

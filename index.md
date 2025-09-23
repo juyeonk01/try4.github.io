@@ -43,7 +43,7 @@ entries_layout: list
       </div>
     </div>
     <div class="profile-right">
-      <img src="{{ '/assets/images/kwonsang-lee.png' | relative_url }}" alt="Portrait of Kwonsang Lee">
+      <img src="{{ '/assets/images/people/kwonsang-lee.png' | relative_url }}" alt="Portrait of Kwonsang Lee">
     </div>
   </div>
 </div>
@@ -90,7 +90,6 @@ entries_layout: list
 </div>
 
 
-
 <div class="prof-research">
   <h2 style="margin-top: 5rem !important;">Research Interests</h2>
   <div class="topics-grid">
@@ -118,13 +117,11 @@ entries_layout: list
 </div>
 
 
-
 <div class="home-news">
   <div class="home-news-left">
     <h2>News</h2>
     <a class="home-news-more" href="{{ '/news/' | relative_url }}">View all →</a>
   </div>
-
   <!-- <div class="home-news-right">
     <ul class="news-list">
       {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
@@ -162,38 +159,3 @@ entries_layout: list
     </ul>
   </div>
 </div>
-
-
-
-<br>
-
-<br>
-
-
-
-## To Do
-
-* Home
-  * Background colors?
-* Research
-  * More colors?
-* Publications
-  * Add DOI
-* People
-  * Better layout
-    * Name card
-    * Background color
-* Seminar
-  * Symposium -> to news
-  * Under research?
-* News
-  * Add more news
-* Misc.
-  * Mobile-friendly
-  * News - yaml?
-  * Copyright messgae
-  * Contact info at the footer? (causal email)
-  * Remove unnecessary code and images and files
-    * scss
-    * head
-

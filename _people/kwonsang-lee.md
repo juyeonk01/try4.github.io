@@ -10,8 +10,6 @@ email: kwonsanglee@snu.ac.kr
 website: https://www.kwonsanglee.com/
 ---
 
-<br>
-
 ## Academic Appointments
 
 * **Associate Professor**, Department of Statistics, Seoul National University, 2025 – Present  
@@ -22,7 +20,6 @@ website: https://www.kwonsanglee.com/
 * **Postdoctoral Research Fellow**, Department of Biostatistics, Harvard T.H. Chan School of Public Health, 2017 – 2019  
   * Mentor: Francesca Dominici  
 
-<br>
 
 ## Education
 
@@ -31,8 +28,6 @@ website: https://www.kwonsanglee.com/
 * **M.A. in Statistics**, University of Pennsylvania, 2015 – 2016  
 * **B.S. in Mathematics, B.A. in Economics**, Seoul National University, 2006 – 2010  
 
-
-<br>
 
 ## Awards and Honors
 
@@ -50,6 +45,4 @@ website: https://www.kwonsanglee.com/
 
 * **Benjamin Franklin Fellowship** (2012–2017)  
   Awarded by the School of Arts and Sciences, University of Pennsylvania.
-
-
 

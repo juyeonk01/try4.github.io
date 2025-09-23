@@ -41,9 +41,3 @@ layout: single
     </ul>
   </div>
 </div>
-
-
-
-
-
-

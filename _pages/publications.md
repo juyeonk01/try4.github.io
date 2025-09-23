@@ -17,8 +17,6 @@ classes: publications-page
   {{ p.authors }} ({{ p.year }}{% if p.status == "submitted" %}+{% endif %}). 
   <span class="pub-title">{{ p.title }}</span>
   {{ p.venue }}
-  <!-- {%- if p.links.arxiv and p.links.arxiv != "" %} [<a href="{{ p.links.arxiv }}">arXiv</a>]{% endif -%}
-  {%- if p.links.paper and p.links.paper != "" %} [<a href="{{ p.links.paper }}">paper</a>]{% endif -%} -->
   {%- if p.links.arxiv and p.links.arxiv != "" %}
     <a href="{{ p.links.arxiv }}" target="_blank" class="pub-link">
       <img src="{{ '/assets/icons/arxiv.svg' | relative_url }}" alt="arXiv" class="pub-icon">
@@ -26,12 +24,11 @@ classes: publications-page
   {%- endif -%}
   {%- if p.links.paper and p.links.paper != "" %}
     <a href="{{ p.links.paper }}" target="_blank" class="pub-link">
-      <img src="{{ '/assets/icons/paper3.svg' | relative_url }}" alt="Paper" class="pub-icon">
+      <img src="{{ '/assets/icons/paper.svg' | relative_url }}" alt="Paper" class="pub-icon">
     </a>
   {%- endif -%}
   </p>
 {%- endfor -%}
-
 
 <hr>
 
@@ -62,8 +59,6 @@ classes: publications-page
       {{ p.authors }} ({{ p.year }}). 
       <span class="pub-title">{{ p.title }}</span>
       {{ p.venue }}
-      <!-- {%- if p.links.arxiv and p.links.arxiv != "" %} [<a href="{{ p.links.arxiv }}">arXiv</a>]{% endif -%}
-      {%- if p.links.paper and p.links.paper != "" %} [<a href="{{ p.links.paper }}">paper</a>]{% endif -%} -->
       {%- if p.links.arxiv and p.links.arxiv != "" %}
         <a href="{{ p.links.arxiv }}" target="_blank" class="pub-link">
           <img src="{{ '/assets/icons/arxiv.svg' | relative_url }}" alt="arXiv" class="pub-icon">
@@ -71,12 +66,10 @@ classes: publications-page
       {%- endif -%}
       {%- if p.links.paper and p.links.paper != "" %}
         <a href="{{ p.links.paper }}" target="_blank" class="pub-link">
-          <img src="{{ '/assets/icons/paper4.svg' | relative_url }}" alt="Paper" class="pub-icon">
+          <img src="{{ '/assets/icons/paper.svg' | relative_url }}" alt="Paper" class="pub-icon">
         </a>
       {%- endif -%}
     </p>
   {%- endfor -%}
 
 {%- endfor -%}
-
-
